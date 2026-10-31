@@ -1,0 +1,46 @@
+[Statedef 2354]
+type    = S
+movetype= A
+physics = S
+juggle  = 10
+poweradd= 65
+ctrl = 0
+velset = 0,0
+anim = 2354
+
+[State 2354, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[State 2354, 1]
+type = HitDef
+trigger1 = Time = 0
+attr = S, NA
+damage = 60,9
+animtype = hard
+guardflag = MA
+hitflag = MAF
+priority = 3, Hit
+pausetime = 8, 8
+sparkno = 0
+sparkxy = -10, -76
+hitsound = 5, 0
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 5
+ground.hittime  = 12
+ground.velocity = -4
+airguard.velocity = -1.9,-.8
+air.type = High
+air.velocity = -1.4,-3
+air.hittime = 12
+
+[State 210, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+

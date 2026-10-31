@@ -1,0 +1,42 @@
+<#f0f000>:Unique Attacks:</>
+Inazuma Kick                                    _F_+^B
+Inazuma Kakato Wari                             _F_+^Y
+Kasumi Geri                                     _F_+^B
+Senpuu Kyaku                                    _F_+^A
+Upper                                           _F_D_DF_+^X
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>EX specials require 400 power.</>
+
+<#f0f000>:Special Moves:</>
+Hadouken                                        _D_DF_F_+[^X/^Y/^Z]
+EX Hadouken                                     _D_DF_F_+[^X^Y/^Y^Z/^X^Z]
+Shoryuken                                       _F_D_DF_+[^X/^Y/^Z]
+EX Shoryuken                                    _F_D_DF_+[^X^Y/^Y^Z/^X^Z]
+Tatsumaki Senpukkyaku                           _D_DB_B_+[^A/^B/^C]
+EX Tatsumaki Senpukkyaku                        _D_DB_B_+[^A^B/^B^C/^A^C]
+Air Tatsumaki Senpukkyaku                       _D_DB_B_+[^A/^B/^C] (Air)
+Ryusenkyaku                                     _F_DF_D_DB_B_+[^A/^B/^C]
+Zenpou Tenshin                                  _F_DF_D_DB_B_+[^X/^Y/^Z]
+
+<#f0f000>:Hypers:</>
+Shoryu Reppa <#bebebe>(1000)</>                 _D_DF_F_+[^X/^Y/^Z]
+Shinryuuken <#bebebe>(1000)</>                  _D_DF_F_+[^A/^B/^C]
+Shippu Jinrai Kyaku <#bebebe>(1000)</>          _D_DB_B_+[^A/^B/^C]
+
+<#f0f000>:System Moves:</>
+Super Jump                                       _D_U
+Dash                                             _F_F
+Hop Backward                                     _B_B
+Parry High                                       _F
+Parry Low                                        _D
+Parry Air                                        _F (Air)
+Throw (Forward)                                  _F_+^X^A
+Throw (Backward)                                 _B_+^X^A
+Recovery                                         ^X^Y^Z

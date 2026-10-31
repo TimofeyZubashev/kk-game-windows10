@@ -1,0 +1,95 @@
+<#f0f000>:Buttons:</>
+Punch (P)                           ^X
+Kick (K)                            ^A
+Slash (S)                           ^Y
+Heavy Slash (HS)                    ^B
+Dust (D)                            ^C
+Extra button                        ^Z
+
+<#f0f000>:Modes - palette number:</>
+Normal: 1-6 / EX: 7-9 / Original: 10-11 / SP: 12
+GC = during guard. EX versions are regular specials.
+Available moves depend on the selected mode.
+
+<#f0f000>:Movement and system:</>
+Dash                                _F_F (also in air)
+Backdash                            _B_B (also in air)
+High jump                           _D_U (ground)
+Double jump                         _U (air)
+Recovery                            ^X (any attack button)
+Roman Cancel                        ^A^Y (on contact; 1000 power)
+Force Roman Cancel                  ^A^Y (specific timing; 500 power)
+Dead Angle Attack                   ^A^X (forward + buttons while guarding; 1000)
+Burst                               ^C^A (Dust + P/K/S/HS; Burst available)
+Instant Kill mode                   ^C^Z (press again to cancel)
+Faultless Defense                   _B_+[^X^A/^A^Y/^Y^B/^B^X] (hold)
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX here is a character mode, selected with palettes 7–9.</>
+<#aab8c7>Its EX versions are regular specials in that mode.</>
+<#aab8c7>Use each listed command with its indicated button.</>
+<#aab8c7>No universal two-Punch / two-Kick EX input applies.</>
+<#aab8c7>Original palettes 10–11 also change some moves.</>
+<#aab8c7>Meter costs for supers and system moves are listed below.</>
+
+<#f0f000>:Special moves:</>
+Tatami Gaeshi                       _D_DF_F^A (ground / air)
+Suzuran                             _F_DF_D_DB_B^A (Normal / Original 11 / SP)
+Suzuran EX                          _F_DF_D_DB_B^A (EX / Original 10)
+Kabari                              _B_DB_D_DF_F^B (ground)
+Tetsuzansen                         ^Y (during Kabari)
+Youzansen                           _F_D_DF^Y (air)
+
+<#f0f000>:Guard cancels and EX versions:</>
+Youshijin                           _B_DB_D^X (ground GC)
+Mawarikomi                          _B_DB_D^A (ground GC)
+Sakura                              _B_DB_D^Y (ground GC)
+Zakuro                              _B_DB_D^B (ground GC; mode dependent)
+Youshijin EX                        _B_D_DB^X (EX)
+Mawarikomi EX                       _B_D_DB^A (EX)
+Sakura EX                           _B_D_DB^Y (EX)
+Zakuro EX                           _B_D_DB^B (EX)
+Sazanka                             _B_DB_D^Y (air GC; Original)
+Hyakka Ryouran                      _B_DB_D^Z (GC; Original; 500 power)
+
+<#f0f000>:Additional specials:</>
+Triple Tatami Gaeshi                _D_DF_F_D_DF_F^A (EX / Original)
+Kadan                               _B_DB_D_DF_F^X (Original)
+Tatami Trap                         _D_D^Z (Original)
+Cross Slash                         _D_DF_F^Z (Original)
+Cross Slash follow-ups (on hit / guard; Original):
+  Youshijin                         ^X
+  Mawarikomi                        ^A
+  Sakura                            ^Y
+  Heel Drop                         ^B
+  Youzansen                         ^C
+  Tetsuzansen                       ^Z
+Guard Point follow-ups (Original):
+Issen                               ^A
+Youzangeki                          ^Y
+Kazaguruma                          ^B
+
+<#f0f000>:Supers:</>
+Tsuranesanzuwatashi                 _D_DF_F_D_DF_F^Y (1000 power)
+Satsujin Shunmaku                   _D_DF_F_D_DF_F^X (EX / Original; costs 1000 power)
+Baku - Kame                         _F_DF_D_DB_B^X (GC; 1000 power)
+Baku - Rin                          _F_DF_D_DB_B^A (GC; 1000 power)
+Baku - Ryuu                         _F_DF_D_DB_B^Y (GC; 1000 power)
+Baku - Hou                          _F_DF_D_DB_B^B (GC; 1000 power)
+Baku - Kame EX                      _B_F_DF_D_DB_B^X (EX; 1000 power)
+Baku - Rin EX                       _B_F_DF_D_DB_B^A (EX; 1000 power)
+Baku - Ryuu EX                      _B_F_DF_D_DB_B^Y (EX; 1000 power)
+Baku - Hou EX                       _B_F_DF_D_DB_B^B (EX; 1000 power)
+Baku - Tsuru                        _B_F_DF_D_DB_B^C (Original; GC; 1000 power)
+Baku - Shin                         _B_F_DF_D_DB_B^Z (Original; GC; 1000 power)
+
+<#f0f000>:Double Baku - Original / GC / 2000 power:</>
+Double Baku - Jigoku                _F_D_B^Z^X
+Double Baku - Gaki                  _F_D_B^Z^A
+Double Baku - Chikushou             _F_D_B^Z^Y
+Double Baku - Shura                 _F_D_B^Z^B
+Double Baku - Ningen                _F_D_B^Z^C
+Double Baku - Tenjou                _F_D_B^Z^Z
+
+<#f0f000>:Instant Kill:</>
+Garyou Tensei                       _D_DF_F_D_DF_F^B (activate Instant Kill mode first)

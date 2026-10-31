@@ -1,0 +1,26 @@
+[Info]
+name = "Pneophen's real cool guy"
+displayname = "Sub-Zero" 
+versiondate = 11,24,2004
+mugenversion = 04,14,2001
+author = "Pneophen"
+pal.defaults = 1
+
+; Files for the player
+[Files]
+cmd     = ninja.cmd
+cns     = ninja.cns
+st      = ninja.cns
+st1     = specials.cns
+st2     = helpers.cns
+st3     = shaddap.cns
+stcommon = common1.cns
+sprite  = sub.sff
+anim    = ninja.air 
+sound   = ono.snd
+pal1    = sub.act
+pal2    = mirror.act
+pal3    = scorp.act
+pal4    = ermac.act
+pal5    = rep.act
+pal6    = greysc.act

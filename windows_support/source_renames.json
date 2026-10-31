@@ -1,0 +1,7 @@
+[
+  {
+    "source_path": "chars/ssf2x_cammy/ХѕРФСБМ©Х\\.txt",
+    "package_path": "chars/ssf2x_cammy/README_original_author.txt",
+    "reason": "Windows forbids backslash in filenames; original text bytes preserved."
+  }
+]

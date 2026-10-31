@@ -1,0 +1,76 @@
+{
+  "verified_at": "2026-10-31T17:24:58.625825+03:00",
+  "test_host": "macOS arm64 with portable official PowerShell 7.6.9",
+  "method": "Real offline extraction, SHA256 and entrypoint logic; fixture-only stubs for OS validation, Unblock-File and Windows native DLL loading. Script executable used only in launcher fixture.",
+  "tests": [
+    {
+      "test": "production_script_rejects_non_windows_host",
+      "passed": true
+    },
+    {
+      "test": "check_missing_runtime_is_read_only",
+      "passed": true
+    },
+    {
+      "test": "offline_install_restores_exe_and_all_12_dlls",
+      "passed": true
+    },
+    {
+      "test": "successful_setup_message",
+      "passed": true
+    },
+    {
+      "test": "repeat_setup_keeps_verified_runtime_files_unchanged",
+      "passed": true
+    },
+    {
+      "test": "successful_check_is_read_only",
+      "passed": true
+    },
+    {
+      "test": "corrupted_dll_repaired_with_backup",
+      "passed": true
+    },
+    {
+      "test": "corrupt_archive_rejected_before_runtime_mutation",
+      "passed": true
+    },
+    {
+      "test": "staged_file_hash_mismatch_is_rejected_and_cleaned",
+      "passed": true
+    },
+    {
+      "test": "retry_after_failed_install_recovers",
+      "passed": true
+    },
+    {
+      "test": "native_load_failure_is_not_reported_as_success",
+      "passed": true
+    },
+    {
+      "test": "manifest_path_traversal_rejected",
+      "passed": true
+    },
+    {
+      "test": "launcher_preserves_workdir_unicode_spaces_and_arguments",
+      "passed": true
+    },
+    {
+      "test": "launcher_returns_game_error_and_shows_logs",
+      "passed": true
+    },
+    {
+      "test": "launcher_check_does_not_start_game_or_modify_files",
+      "passed": true
+    },
+    {
+      "test": "missing_game_assets_detected",
+      "passed": true
+    }
+  ],
+  "windows_10_native_execution_tested": false,
+  "cmd_wrappers_executed_on_windows": false,
+  "native_windows_dll_loading_tested": false,
+  "game_gui_tested": false,
+  "cross_platform_netplay_tested": false
+}

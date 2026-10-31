@@ -1,0 +1,57 @@
+	<#f4cf72>SIXSEVEN</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light Punch		^X
+Medium Punch		^Y
+Heavy Punch		^Z
+Light Kick		^A
+Medium Kick		^B
+Heavy Kick		^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>MOVEMENT & DEFENSE</>
+Super Jump		_D_U
+Dash		_F_F
+Hop Backward		_B_B
+Parry High		_F
+Parry Low		_D
+Parry Air		_F (Air)
+Recovery		^X_+^Y_+^Z
+
+<#72c8eb>THROWS & UNIQUE ATTACKS</>
+Throw (Forward)		_F_+^X_+^A
+Throw (Backward)		_B_+^X_+^A
+Inazuma Kick		_F_+^B
+Inazuma Kakato Wari		_F_+^Y
+Kasumi Geri		_F_+^B
+Senpuu Kyaku		_F_+^A
+Upper		_F_D_DF_+^X
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>EX specials require 400 power.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Hadouken		_D_DF_F_+[^X/^Y/^Z]
+Shoryuken		_F_D_DF_+[^X/^Y/^Z]
+Tatsumaki Senpukkyaku		_D_DB_B_+[^A/^B/^C]
+Air Tatsumaki Senpukkyaku		_D_DB_B_+[^A/^B/^C] (Air)
+Ryusenkyaku		_F_DF_D_DB_B_+[^A/^B/^C]
+Zenpou Tenshin		_F_DF_D_DB_B_+[^X/^Y/^Z]
+
+<#72c8eb>EX MOVES</>
+EX Hadouken		_D_DF_F_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Shoryuken		_F_D_DF_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Tatsumaki Senpukkyaku		_D_DB_B_+[^A_+^B/^B_+^C/^A_+^C]
+
+<#72c8eb>SUPER ARTS — 1000 POWER</>
+Shoryu Reppa		_D_DF_F_+[^X/^Y/^Z]
+Shinryuuken		_D_DF_F_+[^A/^B/^C]
+Shippu Jinrai Kyaku		_D_DB_B_+[^A/^B/^C]

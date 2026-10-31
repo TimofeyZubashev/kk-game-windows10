@@ -1,0 +1,34 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************     http://virtualltek.mgbr.net     *******************;
+;***************************************************************************;
+
+[Info]
+name = "96-Chin"
+displayname = "Chin Gentsai"
+versiondate = V3
+mugenversion = 1.0
+author = "Facu'96"
+pal.defaults = 4,1
+
+[Files]
+sprite = Chin.sff
+anim = Chin.air
+sound = Chin.snd
+cmd = Chin.cmd
+cns = Chin.cns
+stcommon = common1.cns
+st = Chin.cns
+st1 = Chin-N.cns
+st2 = Chin-S.cns
+st3 = Chin-H.cns
+st4 = Chin-2-3.cns
+pal1 = pal\2.act
+pal2 = pal\4.act
+pal3 = pal\3.act
+pal4 = pal\1.act
+pal5 = pal\3.act
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 

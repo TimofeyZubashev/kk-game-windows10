@@ -1,0 +1,13 @@
+# Operating system metadata
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Generated game and installer output
+*.log
+/save/logs/
+/save/replays/
+/windows_support/backups/
+/windows_support/runtime-staging-*/
+/windows_support/.runtime.lock

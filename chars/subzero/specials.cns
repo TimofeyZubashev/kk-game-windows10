@@ -1,0 +1,367 @@
+;----------------------------------------------------------------
+;freeze bitch
+[Statedef 6000]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+velset = 0,0
+anim = 6000
+sprpriority = 2
+
+[State ]
+type = Helper
+trigger1 = time = 6
+helpertype = Normal
+ID = 7000
+name = "chill out" 
+postype = p1
+pos = ceil(105*const(size.xscale)),ceil(-82*const(size.yscale))
+stateno = 7000
+ownpal = 1
+
+[State ò_ó]
+type = Explod
+trigger1 = time = 6
+anim = 7018
+id = 7018
+Postype = p1
+pos = ceil(0*const(size.xscale)),ceil(0*const(size.yscale))
+bindtime = -1
+removeongethit = 1
+sprpriority = 3
+scale = const(size.xscale),const(size.yscale)
+ownpal = 1
+
+[State end]
+type = changestate
+trigger1 = var(2) >= 2
+value = 6001
+
+[State end]
+type = changestate
+trigger1 = !animtime
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+;..............................
+[Statedef 6001]
+type    = S
+movetype= H
+physics = N
+velset = 0,0
+
+[State blackness]
+type = palfx
+trigger1 = !(time%1)
+time = 1
+ignorehitpause = 1
+add = 70,70, 250
+
+[State amination]
+type = ChangeAnim
+Trigger1 = 1
+value = anim
+elem = animelemno(0)
+
+[State wallbanger]
+type = ChangeState
+Trigger1 = time = 190
+ctrl = 1
+value = 0
+;----------------------------------------------------------------
+;sliddedededededed
+[Statedef 6002]
+type    = S
+movetype= A
+physics = N
+poweradd= 0
+ctrl = 0
+velset = 9,0
+anim = 6001
+sprpriority = 2
+
+[State end]
+type = playsnd
+trigger1 = !time
+value = 1,1
+
+[State end]
+type = velset
+trigger1 = (time = 26 || anim = 6002)
+x = 0
+
+[State ]
+type = Hitdef
+trigger1 = !movecontact
+damage = 78,35
+getpower = 0,0
+givepower = 0,0
+pausetime = 8,8
+attr = A,NA
+hitflag = MAFD
+guardflag = LA
+animtype = light
+air.animtype = back
+priority = 5, hit
+sparkno = -1
+guard.sparkno = -1
+sparkxy = 0, 0
+hitsound = S0,3
+guardsound = S0,7
+ground.type = high
+air.type = high
+ground.slidetime = 15
+ground.hittime = 15
+ground.velocity = -3, -7 
+air.velocity = -3, -5
+guard.velocity = -5
+air.cornerpush.veloff = -7
+ground.cornerpush.veloff = -7
+yaccel = .5
+fall = 1
+fall.recover = 0
+fall.xvelocity = 0
+fall.yvelocity = 0
+p2facing = 1
+kill = var(4)
+guard.kill = var(4)
+
+[State end]
+type = changeanim
+trigger1 = movecontact
+;ignorehitpause = 1
+persistent = 0
+value = 6002
+
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+
+[State end]
+type = changestate
+trigger1 = !animtime
+value = 0
+ctrl = 1
+;---------------------------------------------------------------
+[Statedef 6099]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State end] 
+type = changeState
+trigger1 = 1
+value = 6099
+;---------------------------------------
+;sliddedededededed2
+[Statedef 6003]
+type    = S
+movetype= A
+physics = N
+poweradd= 0
+ctrl = 0
+velset = 0,0
+anim = 6003
+sprpriority = 2
+
+[State end]
+type = playsnd
+trigger1 = !time
+value = 1,7
+
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State ò_ó]
+type = Explod
+trigger1 = animelem = 3
+anim = 7005
+id = 7005
+Postype = p1
+pos = ceil(0*const(size.xscale)),ceil(0*const(size.yscale))
+bindtime = -1
+removetime = -1
+removeongethit = 1
+sprpriority = 3
+scale = const(size.xscale),const(size.yscale)
+ownpal = 1
+
+[State ò_ó]
+type = removeExplod
+trigger1 = animelem = 5
+id = 7005
+
+[State end]
+type = velset
+trigger1 = !animelemtime(3) || (!animelemtime(4) || movecontact)
+x = ifelse(!animelemtime(3),12,0)
+
+[State ]
+type = Hitdef
+trigger1 = !movecontact
+damage = 130,35
+getpower = 0,0
+givepower = 0,0
+pausetime = 10,10
+attr = A,NA
+guardflag = MA
+animtype = light
+air.animtype = back
+priority = 5, hit
+sparkno = -1;s7014
+guard.sparkno = -1
+sparkxy = 5, ceil(-71*const(size.yscale))
+hitsound = S0,2
+guardsound = S0,7
+ground.type = high
+air.type = high
+ground.slidetime = 15
+ground.hittime = 15
+ground.velocity = -7, -5 
+air.velocity = -7, -5+fvar(1)
+guard.velocity = -10
+air.cornerpush.veloff = -7
+ground.cornerpush.veloff = -7
+yaccel = .5
+fall = 1
+fall.recover = 0
+fall.xvelocity = 0
+fall.yvelocity = 0
+p2facing = 1
+kill = var(4)
+guard.kill = var(4)
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "slide" 
+postype = p1
+pos = 0,0
+stateno = 7010
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = movehit
+helpertype = Normal
+persistent = 0
+ignorehitpause = 1
+ID = 7012
+name = "ntjisoerh" 
+postype = p1
+pos = ceil(70*const(size.xscale)),ceil(-71*const(size.yscale))
+stateno = 7012
+ownpal = 1
+
+[State end]
+type = changestate
+trigger1 = !animtime
+value = 0
+ctrl = 1
+;---------------------------------------------------------------
+[Statedef 6099]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State end] 
+type = changeState
+trigger1 = 1
+value = 6099
+;---------------------------------------
+;air freeze
+[Statedef 6004]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+ctrl = 0
+velset = 0,0
+anim = 6004
+sprpriority = 2
+
+[State ]
+type = Helper
+trigger1 = animelem = 2
+helpertype = Normal
+ID = 7013
+name = "chill out" 
+postype = p1
+pos = ceil(50*const(size.xscale)),ceil(-110*const(size.yscale))
+stateno = 7013
+ownpal = 1
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State end]
+type = changestate
+trigger1 = var(2) >= 2
+value = 6005
+
+[State ]
+type = velset
+trigger1 = animelem = 2
+x = -2
+[State ]
+type = statetypeset
+trigger1 = time = 6
+physics = A
+
+;---------------------------------------------------------------------------
+;..............................
+[Statedef 6005]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+
+[State blackness]
+type = palfx
+trigger1 = !(time%1)
+time = 1
+ignorehitpause = 1
+add = 70,70, 250
+
+[State amination]
+type = ChangeAnim
+Trigger1 = 1
+value = anim
+elem = animelemno(0)
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State ]
+type = hitfallset
+Trigger1 = 1
+value = 1
+
+[State wallbanger]
+type = ChangeState
+Trigger1 = time = 190
+value = 5030

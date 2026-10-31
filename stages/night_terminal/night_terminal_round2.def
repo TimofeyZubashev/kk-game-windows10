@@ -1,0 +1,233 @@
+; Night Terminal: lossless user PNG, background scale 0.75.
+; Saved disco effect from Kombat Nightclub by Meldo.
+; Credits: Mortal Kombat Warehouse, Borg117, Emsi-D, Fly, Markos, Max Arturo.
+[Info]
+name = "Night Terminal"
+displayname = "Night Terminal"
+versiondate = 10,27,2026
+mugenversion = 1.1
+author = "Custom Fighting Game"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -403.500000
+boundright = 403.500000
+boundhigh = -119
+boundlow = 0
+verticalfollow = .6
+tension = 120
+floortension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 1
+
+[PlayerInfo]
+p1startx = -140
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 140
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -4000
+rightbound = 4000
+topbound = 0
+botbound = 0
+
+[Bound]
+screenleft = 30
+screenright = 30
+
+[StageInfo]
+localcoord = 640,480
+zoffset = 432
+autoturn = 1
+resetbg = 1
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 35
+color = 25,25,0
+yscale = .3
+fade.range = 160,40
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = stages/night_terminal/locked_club_electro_from20s.mp3
+bgmvolume = 75
+bgm.loop = 1
+
+[BGdef]
+spr = night_terminal.sff
+debugbg = 0
+
+[BG NightTerminal]
+type = normal
+spriteno = 0,1
+id = 10
+layerno = 0
+start = 0,-123.862500
+delta = 1,1
+scalestart = 0.75,0.75
+mask = 0
+
+[BG DiscoEffect Light 1]
+type  = anim
+actionno = 31001
+layerno = 0
+start = -400,200
+delta = .5, .8
+sin.x = 160,300,550
+scalestart = 2,2
+
+[BG DiscoEffect Light 2]
+type  = anim
+actionno = 31002
+layerno = 0
+start = 400,200
+delta = .5, .8
+sin.x = -160,300,550
+scalestart = 2,2
+
+[BG DiscoEffect Ball]
+type  = anim
+actionno = 31000
+layerno = 0
+start = 0,-40
+delta = 0.65, 1
+trans = none
+mask  = 1
+scalestart = 2,2
+
+[BG DiscoEffect Floor Dot 1]
+type  = normal
+spriteno = 31002, 0
+start = 0,394.200
+delta = 0.58, 1
+mask = 1
+velocity = -2,0
+tile  = 1, 0
+tilespacing = 16,0
+trans = addalpha
+alpha = 70, 256
+layerno = 0
+scalestart = 2,1.4
+
+[BG DiscoEffect Floor Dot 2]
+type  = normal
+spriteno = 31002, 0
+start = 32,408.200
+delta = 0.58, 1
+mask = 1
+velocity = -2,0
+tile  = 1, 0
+tilespacing = 16,0
+trans = addalpha
+alpha = 70, 256
+layerno = 0
+scalestart = 2,1.4
+
+[BG DiscoEffect Floor Dot 3]
+type  = normal
+spriteno = 31002, 0
+start = 0,422.200
+delta = 0.58, 1
+mask = 1
+velocity = -3.0,0
+tile  = 1, 0
+tilespacing = 16,0
+trans = addalpha
+alpha = 70, 256
+layerno = 0
+scalestart = 2,1.4
+
+[BG DiscoEffect Floor Dot 4]
+type  = normal
+spriteno = 31002, 0
+start = 32,436.200
+delta = 0.58, 1
+mask = 1
+velocity = -3.0,0
+tile  = 1, 0
+tilespacing = 16,0
+trans = addalpha
+alpha = 70, 256
+layerno = 0
+scalestart = 2,1.4
+
+[BG DiscoEffect Floor Dot 5]
+type  = normal
+spriteno = 31002, 0
+start = 0,450.200
+delta = 0.58, 1
+mask = 1
+velocity = -4,0
+tile  = 1, 0
+tilespacing = 16,0
+trans = addalpha
+alpha = 70, 256
+layerno = 0
+scalestart = 2,1.4
+
+[BG DiscoEffect Floor Dot 6]
+type  = normal
+spriteno = 31002, 0
+start = 32,464.200
+delta = 0.58, 1
+mask = 1
+velocity = -4,0
+tile  = 1, 0
+tilespacing = 16,0
+trans = addalpha
+alpha = 70, 256
+layerno = 0
+scalestart = 2,1.4
+
+[Begin Action 9000]
+9000,1, 0,0,-1
+
+
+
+
+[Begin Action 31000]
+31000,0, 0,0, 6
+31000,1, 0,0, 6
+31000,2, 0,0, 6
+31000,3, 0,0, 6
+31000,4, 0,0, 6
+31000,5, 0,0, 6
+
+[Begin Action 31001]
+31001,0, 0,0, 3, , AS195D256
+31001,0, 0,0, 3, , AS175D256
+31001,0, 0,0, 3, , AS155D256
+31001,0, 0,0, 3, , AS135D256
+31001,0, 0,0, 3, , AS115D256
+31001,0, 0,0, 3, , AS95D256
+31001,0, 0,0, 3, , AS75D256
+31001,0, 0,0, 3, , AS55D256
+31001,0, 0,0, 3, , AS35D256
+31001,0, 0,0, 3, , AS15D256
+-1,0, 0,0, 30
+31001,0, 0,0, 3, , AS55D256
+31001,0, 0,0, 3, , AS115D256
+
+[Begin Action 31002]
+31001,0, 0,0, 3, H, AS195D256
+31001,0, 0,0, 3, H, AS175D256
+31001,0, 0,0, 3, H, AS155D256
+31001,0, 0,0, 3, H, AS135D256
+31001,0, 0,0, 3, H, AS115D256
+31001,0, 0,0, 3, H, AS95D256
+31001,0, 0,0, 3, H, AS75D256
+31001,0, 0,0, 3, H, AS55D256
+31001,0, 0,0, 3, H, AS35D256
+31001,0, 0,0, 3, H, AS15D256
+-1,0, 0,0, 30
+31001,0, 0,0, 3, H, AS55D256
+31001,0, 0,0, 3, H, AS115D256

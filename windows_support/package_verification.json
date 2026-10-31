@@ -1,0 +1,23 @@
+{
+  "verified_at": "2026-10-31T17:26:48.612730+03:00",
+  "game_asset_files_sha256_verified": 1409,
+  "all_non_platform_source_file_contents_preserved": true,
+  "windows_filename_compatibility": "passed",
+  "windows_case_collisions": false,
+  "dll_count": 12,
+  "pe_architecture": "AMD64, GOAMD64=v1",
+  "all_non_system_pe_imports_and_delay_imports_bundled": true,
+  "external_visual_cpp_runtime_imports": false,
+  "engine_commit_matches_mac": "ba516193bba83f13f0b63ddce314d8719793931f",
+  "official_release_sha256": "1f02dd94f91b08b2d673581427b25fd43f9b771e39e8f3761ca41dbefbe844ce",
+  "powershell_parse_and_csharp_compilation": "passed in PowerShell 7.6.9 on macOS",
+  "windows_argument_quoting_cases_passed": 6,
+  "windows_script_encodings": "CMD ASCII CRLF; PS1 UTF-8 BOM CRLF",
+  "windows_10_native_execution_tested": false,
+  "powershell_5_1_execution_tested": false,
+  "game_gui_tested": false,
+  "mac_windows_netplay_tested": false,
+  "game_resources_match_prepared_mac_airdrop_snapshot": true,
+  "shared_source_files_compared_to_mac_airdrop_snapshot": 1409,
+  "mac_companion_folder_at_verification": "/Users/timofey/Documents/custom_fighting_game/KK_Game_AirDrop"
+}

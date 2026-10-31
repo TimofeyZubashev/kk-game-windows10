@@ -1,0 +1,53 @@
+	<#f4cf72>CAMMY — SSF2X</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light Punch		^X
+Medium Punch		^Y
+Heavy Punch		^Z
+Light Kick		^A
+Medium Kick		^B
+Heavy Kick		^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>THROWS</>
+Hooligan Suplex		[_F/_B]_+[^Y/^Z]
+Frankensteiner		[_F/_B]_+[^B/^C]
+<#aab8c7>Close to a grounded opponent.</>
+Flying Neck Hunt		[_F/_B]_+[^Y/^Z]
+Air Frankensteiner		[_F/_B]_+[^B/^C]
+<#aab8c7>Air throws: both fighters must be airborne.</>
+<#aab8c7>Release Up before attempting an air throw.</>
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up specials in some fighting styles.</>
+<#aab8c7>This character has no EX special-move versions.</>
+<#aab8c7>Use one Punch or Kick for the normal strength variants.</>
+<#aab8c7>A full meter enables Spin Drive Smasher, listed below.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Spiral Arrow		_D_DF_F_+[^A/^B/^C]
+Cannon Spike		_F_D_DF_+[^A/^B/^C]
+Axle Spin Knuckle		_B_DB_F_+[^X/^Y/^Z]
+Hooligan Combination		_DB_D_DF_F_UF_+[^X/^Y/^Z]
+<#aab8c7>Use a light, medium or heavy button to vary</>
+<#aab8c7>the move's version.</>
+
+<#72c8eb>HOOLIGAN FOLLOW-UPS</>
+Fatal Leg Twister		[_F/_B]_+[^A/^B/^C]
+<#aab8c7>During Hooligan, near a grounded opponent's head.</>
+Cross Scissor Pressure		[_F/_B]_+[^A/^B/^C]
+<#aab8c7>During Hooligan, near the opponent's midsection.</>
+<#aab8c7>Can also catch an airborne opponent.</>
+Cancel		[^A/^B/^C]
+<#aab8c7>During Hooligan, high enough and away from a grab.</>
+Razor Edge Slicer		No additional input
+<#aab8c7>Let Hooligan reach the ground without a follow-up.</>
+
+<#72c8eb>SUPER — FULL METER</>
+Spin Drive Smasher		_D_DF_F_D_DF_+[^A/^B/^C]
+<#aab8c7>Finish the directional input on Down-Forward.</>
+Easy Super		^X_+^A
+<#aab8c7>Both Super inputs require a full meter.</>
+<#aab8c7>Perform the Super while grounded.</>

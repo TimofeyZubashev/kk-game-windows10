@@ -1,0 +1,78 @@
+	<#f4cf72>MAKOTO</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light / Medium / Heavy Punch		^X / ^Y / ^Z
+Light / Medium / Heavy Kick		^A / ^B / ^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>BASIC ACTIONS</>
+Forward Dash		_F_F
+Back Dash		_B_B
+High Jump		_D_U
+Throw / Throw Escape		^X_+^A
+<#aab8c7>Throw: close to a grounded opponent.</>
+<#aab8c7>Hold Back with the throw to reverse direction.</>
+Leap Attack		^Y_+^B
+Personal Action		^Z_+^C
+<#aab8c7>Hold both buttons for the longer taunt.</>
+<#aab8c7>The taunt strengthens your next successful hit.</>
+Parry High / Air		_F
+Parry Low		_D
+<#aab8c7>Tap just before the attack connects.</>
+
+<#72c8eb>COMMAND NORMALS & TARGET COMBOS</>
+Forward Normals		_F_+[^X/^Y/^Z/^A/^B/^C]
+Target Combo		^A, ^B
+Target Combo		_F_+^Z, ^Z
+Forward Kick Sequence		_F_+^B, ^C
+<#aab8c7>The forward kick sequence is not a true combo.</>
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>EX specials require 400 power.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Hayate		_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Hold Punch to charge; release to attack.</>
+<#aab8c7>Press any Kick while charging to cancel.</>
+Fukiage		_F_D_DF_+[^X/^Y/^Z]
+Oroshi		_D_DB_B_+[^X/^Y/^Z]
+Karakusa		_F_DF_D_DB_B_+[^A/^B/^C]
+<#aab8c7>Close-range command throw; follow with an attack.</>
+Tsurugi (air)		_D_DB_B_+[^A/^B/^C]
+<#aab8c7>Neutral or forward jump; no backward movement.</>
+
+<#72c8eb>EX MOVES — 400 POWER</>
+EX Hayate		_D_DF_F_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Fukiage		_F_D_DF_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Oroshi		_D_DB_B_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Tsurugi (air)		_D_DB_B_+[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use any two Punches or any two Kicks.</>
+<#aab8c7>EX moves are unavailable during Tanden Renki.</>
+
+<#72c8eb>SUPER ART SELECTION</>
+<#aab8c7>During the intro, press Up / Down to select.</>
+<#aab8c7>No Super Art name displayed = All Super Arts.</>
+
+<#72c8eb>SUPER ARTS — SELECTED ART ONLY</>
+I: Seichusen Godanzuki		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Requires 1200 power.</>
+II: Abare Tosanami Kudaki		_D_DF_F_D_DF_F_+[^A/^B/^C]
+<#aab8c7>Requires 880 power; Kick changes the launch angle.</>
+III: Tanden Renki		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Requires 960 power; boosts attack, disables guard.</>
+
+<#72c8eb>ALL SUPER ARTS MODE — 1200 POWER EACH</>
+Seichusen Godanzuki		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+Abare Tosanami Kudaki		_D_DF_F_D_DF_F_+[^A/^B/^C]
+Tanden Renki		_D_DB_B_D_DB_B_+[^X/^Y/^Z]
+<#aab8c7>Super Arts are unavailable during Tanden Renki.</>
+System Direction Menu		^S
+<#aab8c7>Start opens optional settings in All Arts mode.</>

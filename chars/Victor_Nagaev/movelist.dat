@@ -1,0 +1,71 @@
+	<#f4cf72>VICTOR NAGAEV</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light Punch		^X
+Medium Punch		^Y
+Heavy Punch		^Z
+Light Kick		^A
+Medium Kick		^B
+Heavy Kick		^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>MOVEMENT & DEFENSE</>
+Forward Dash		_F_F
+Back Dash		_B_B
+Super Jump		_D_U
+Quick Stand		_D
+<#aab8c7>Press Down as you hit the ground.</>
+High Parry		_F
+Low Parry		_D
+<#aab8c7>Tap the direction just before the attack hits.</>
+Personal Action		^Z_+^C
+<#aab8c7>Boosts attacks performed immediately afterward.</>
+<#aab8c7>While stunned, rapidly change directions</>
+<#aab8c7>to recover faster.</>
+
+<#72c8eb>THROWS & UNIQUE ATTACKS</>
+Body Slam		^X_+^A
+<#aab8c7>Close range; optionally hold Forward or Back.</>
+Headbutt		_B_+^Z
+Sleeper Hold		_B_+^Z
+<#aab8c7>Sleeper Hold: stand behind your opponent.</>
+Chop		_F_+^Y
+Lariat		_F_+^Z
+Flying Cross Chop		_D_+^Z
+<#aab8c7>During a neutral or forward jump.</>
+Leap Attack		^Y_+^B
+
+<#72c8eb>TARGET COMBOS</>
+Crouching Light Kick > Medium Kick		_D_+^A > _D_+^B
+Crouching Light Kick > Heavy Kick		_D_+^A > _D_+^C
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>EX specials require 400 power; watch the flashing meter.</>
+<#aab8c7>Flash Chop uses Punches; other EX specials use Kicks.</>
+<#f4cf72>SC</> <#aab8c7>means the move can cancel into a Super Art.</>
+<#aab8c7>Hold the indicated direction to charge the move.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Flash Chop <#aab8c7>[EX, SC]</>		_D_DF_F_+[^X/^Y/^Z]
+Air Knee Smash <#aab8c7>[EX]</>		_F_D_DF_+[^A/^B/^C]
+Air Stampede <#aab8c7>[EX]</>		_D (hold) _U_+[^A/^B/^C]
+Slash Elbow <#aab8c7>[EX, SC]</>		_B (hold) _F_+[^A/^B/^C]
+Power Bomb		_F_DF_D_DB_B_+[^X/^Y/^Z]
+Back Drop		_F_DF_D_DB_B_+[^X/^Y/^Z]
+<#aab8c7>Back Drop: stand behind your opponent.</>
+Spiral D.D.T.		_B_DB_D_DF_F_+[^A/^B/^C]
+
+<#72c8eb>SUPER ARTS — 1 STOCK</>
+I. Hyper Bomb		360 motion_+[^X/^Y/^Z]
+II. Boomerang Raid		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+III. Stun Gun Headbutt		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>When all Super Arts are enabled:</>
+Stun Gun Headbutt		_D_DB_B_D_DB_B_+[^X/^Y/^Z]

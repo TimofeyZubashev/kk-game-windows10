@@ -1,0 +1,143 @@
+{
+  "Ikemen_GO.exe": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.dll"
+    ],
+    "delay_imports": [
+      "avcodec-61.dll",
+      "avfilter-10.dll",
+      "avformat-61.dll",
+      "avutil-59.dll",
+      "SDL2.dll",
+      "swresample-5.dll",
+      "swscale-8.dll",
+      "libxmp.dll"
+    ]
+  },
+  "lib/SDL2.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "ADVAPI32.dll",
+      "GDI32.dll",
+      "IMM32.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "ole32.dll",
+      "OLEAUT32.dll",
+      "SETUPAPI.dll",
+      "SHELL32.dll",
+      "USER32.dll",
+      "VERSION.dll",
+      "WINMM.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/avcodec-61.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "libwinpthread-1.dll",
+      "avutil-59.dll",
+      "swresample-5.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/avdevice-61.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "avformat-61.dll",
+      "avutil-59.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/avfilter-10.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "avutil-59.dll",
+      "swscale-8.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/avformat-61.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "WS2_32.dll",
+      "avcodec-61.dll",
+      "avutil-59.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/avutil-59.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "bcrypt.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "libwinpthread-1.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/libgcc_s_seh-1.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "libwinpthread-1.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/libstdc++-6.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "libgcc_s_seh-1.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "libwinpthread-1.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/libwinpthread-1.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/libxmp.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/swresample-5.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "avutil-59.dll"
+    ],
+    "delay_imports": []
+  },
+  "lib/swscale-8.dll": {
+    "machine": "0x8664",
+    "imports": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "avutil-59.dll"
+    ],
+    "delay_imports": []
+  }
+}

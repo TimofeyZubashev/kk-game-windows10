@@ -1,0 +1,67 @@
+	<#f4cf72>ORO</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light Punch		^X
+Medium Punch		^Y
+Heavy Punch		^Z
+Light Kick		^A
+Medium Kick		^B
+Heavy Kick		^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>MOVEMENT & DEFENSE</>
+Forward Dash		_F_F
+Back Dash		_B_B
+Super Jump		_D_U
+Double Jump		_U
+<#aab8c7>Release Up, then press Up again during a jump.</>
+High Parry		_F
+Low Parry		_D
+Air Parry		_F
+<#aab8c7>Tap the direction just before the attack hits.</>
+Personal Action		^Z_+^C
+<#aab8c7>Hold both buttons; release either to finish.</>
+
+<#72c8eb>THROWS & UNIQUE ATTACKS</>
+Ground Throw		^X_+^A
+<#aab8c7>Close range against a grounded opponent.</>
+Air Throw		^X_+^A
+<#aab8c7>Very close range; both characters airborne.</>
+Forward Palm		_F_+^Y
+Leap Attack		^Y_+^B
+Close Medium Punch > Super Jump		^Y > _D_U
+<#aab8c7>Perform the jump after the close punch connects.</>
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>Ground EX moves require 330 power.</>
+<#aab8c7>Fireball / Uppercut use Punches; Flying Kick uses Kicks.</>
+<#aab8c7>Hold the indicated direction to charge the move.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Charge Fireball <#aab8c7>[EX]</>		_B (hold) _F_+[^X/^Y/^Z]
+Rising Uppercut <#aab8c7>[EX]</>		_D (hold) _U_+[^X/^Y/^Z]
+Command Throw		_F_DF_D_DB_B_+[^X/^Y/^Z]
+Flying Kick <#aab8c7>[EX]</>		_D_DF_F_+[^A/^B/^C]
+Air Flying Kick <#aab8c7>[EX]</>		_D_DF_F_+[^A/^B/^C]
+<#aab8c7>Air Flying Kick: perform during a jump.</>
+
+<#72c8eb>SUPER ARTS</>
+I. Grab Mode <#aab8c7>[1000+]</>		_D_DF_D_DF_+[^A/^B/^C]
+<#aab8c7>After activation, connect a standing normal</>
+<#aab8c7>to enter the grab sequence. Meter drains over time.</>
+II. Energy Ball <#aab8c7>[1000]</>		_D_DF_D_DF_+[^X/^Y/^Z]
+<#aab8c7>Punch strength changes the ball's trajectory.</>
+II. MAX Energy Ball <#aab8c7>[3000]</>		_D_DF_D_DF_+[^X/^Y/^Z]
+<#aab8c7>Press two Punch buttons with a full meter.</>
+
+<#72c8eb>VERSION NOTES</>
+<#aab8c7>Super inputs use Down, Down-Forward twice.</>
+<#aab8c7>The third Super Art is disabled in this version.</>

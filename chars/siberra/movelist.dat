@@ -1,0 +1,111 @@
+	<#f4cf72>SIBERRA</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light Punch		^X
+Medium Punch		^Y
+Heavy Punch		^Z
+Light Kick		^A
+Medium Kick		^B
+Heavy Kick		^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>MOVEMENT & DEFENSE</>
+Forward / Back Step		_F_F / _B_B
+High Jump		_D_U
+Quick Stand		_D
+<#aab8c7>Tap Down as you land after a knockdown.</>
+High / Air Parry		_F
+Low Parry		_D
+<#aab8c7>Tap just before the attack connects.</>
+Personal Action		^Z_+^C / ^S
+<#aab8c7>When the taunt hits, your next attack gains damage.</>
+Leap Attack		^Y_+^B
+
+<#72c8eb>THROWS</>
+Yami Kazura		^X_+^A
+<#aab8c7>Close to opponent; Forward / Back changes throw.</>
+Tobizaru (air)		^X_+^A
+<#aab8c7>Close to an airborne opponent.</>
+
+<#72c8eb>UNIQUE ATTACKS</>
+Maki Geri		_F_+^A
+Agemen		_B_+^Y
+Ura Maki Geri		_B_+^B
+Zudaki		_F_+^B
+Sazan		_DF_+^B
+Oitsui Uraken		^Z during far Heavy Punch
+Bonsho Geri		_F_+^C
+
+<#72c8eb>TARGET COMBOS</>
+Diagonal Jump		^X > _F_+^Z
+Diagonal Jump		^A > _F_+^Y
+Air Combo		^Z > _F_+^B
+Ground Combo		_B_+^B > _F_+^B
+Far Combo		^X > ^Y > _F_+^A
+Close Combo		^X > ^Y > ^Z
+<#aab8c7>Cancel Medium Punch on its first hit.</>
+Ground Combo		^A > ^B > ^C
+<#aab8c7>Finish with far Heavy Kick.</>
+Close Combo		^Z > _D_+^C > ^C
+<#aab8c7>Let close Heavy Punch hit twice first.</>
+Close Combo		^X > ^Y > _D_+^C > ^C
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>EX specials require 400 power.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Kunai (air)		_D_DF_F_+[^X/^Y/^Z]
+Reverse Kunai (air)		_D_DB_B_+[^X/^Y/^Z]
+Kubiori		_D_DF_F_+[^X/^Y/^Z]
+Kazekiri		_F_D_DF_+[^A/^B/^C]
+Tsumuji		_D_DB_B_+[^A/^B/^C]
+Tsumuji Follow-up		[^A/^B/^C]
+Tsumuji Low Follow-up		_D_+[^A/^B/^C]
+<#aab8c7>Press during Tsumuji.</>
+Hien		_B_D_DB_+[^A/^B/^C]
+Raida		_F_DF_D_DB_B_+[^X/^Y/^Z]
+Tsuijigoe		_F_D_DF_+[^X/^Y/^Z]
+Kasumi Gake		_D_DF_F_+[^A/^B/^C]
+<#aab8c7>After Hien connects: Kunai or Kasumi Suzaku.</>
+<#aab8c7>After Tsuijigoe's apex: Kunai or Kasumi Suzaku.</>
+
+<#72c8eb>EX MOVES — 400 POWER</>
+<#aab8c7>Use any two Punches or any two Kicks.</>
+EX Kunai (air)		_D_DF_F_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+Reverse EX Kunai (air)		_D_DB_B_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Kubiori		_D_DF_F_+[^X_+^Y/^Y_+^Z/^X_+^Z]
+EX Kazekiri		_F_D_DF_+[^A_+^B/^B_+^C/^A_+^C]
+EX Tsumuji		_D_DB_B_+[^A_+^B/^B_+^C/^A_+^C]
+EX Hien		_B_D_DB_+[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Hold Forward after EX Kunai for extra range.</>
+<#aab8c7>EX Kazekiri: air attacks on descent after a hit.</>
+
+<#72c8eb>SUPER ART SELECTION</>
+<#aab8c7>During intro: Up / Down, then any attack to confirm.</>
+<#aab8c7>Default selection: ALL Super Arts.</>
+<#aab8c7>Super commands below finish on Down-Forward.</>
+
+<#72c8eb>SELECTED SUPER ART — ONE STOCK</>
+I. Kasumi Suzaku (air)		_D_DF_F_D_DF_+[^X/^Y/^Z]
+<#aab8c7>880 power; mash Punch for additional Kunai.</>
+II. Yoroi Doshi		_D_DF_F_D_DF_+[^X/^Y/^Z]
+<#aab8c7>1200 power; perform on the ground.</>
+III. Yami Shigure		_D_DF_F_D_DF_+[^X/^Y/^Z]
+<#aab8c7>800 power; perform on the ground.</>
+
+<#72c8eb>ALL SUPER ARTS — 1280 POWER EACH</>
+Kasumi Suzaku (air)		_D_DF_F_D_DF_+[^X/^Y/^Z]
+Reverse Suzaku (air)		_D_DB_B_D_DB_+[^X/^Y/^Z]
+Yoroi Doshi		_D_DF_F_D_DF_+[^X/^Y/^Z]
+Yami Shigure		_D_DF_F_D_DF_+[^A/^B/^C]
+Hashinsho		_D_DB_B_D_DB_+[^X/^Y/^Z]
+<#aab8c7>Hashinsho is enabled in this build's ALL mode.</>
+<#aab8c7>Reverse Suzaku also works with Art I selected.</>

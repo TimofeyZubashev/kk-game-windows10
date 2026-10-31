@@ -1,0 +1,117 @@
+Sub-Zero v0.1 beta(??% complete) ô_ô
+1/28/04
+For ver.= For the 4.14.01 one only
+By Pneophen(Patrick Ching)
+----------------------------------------------------------------------
+
+WTF!?! Who is this. ò_ó
+----------------------------------------------------------------------
+The blue ninja.
+
+Whats new:
+----------------------------------------------------------------------
+Dec. 28,2004
+----------------------------------------------------------------------
+-changed recover time on uppercut
+-changed command for fatality disable
+-slide can now otg
+
+
+Dec. 25,2004
+----------------------------------------------------------------------
+-Everything
+
+
+======================================================================
+To do:
+----------------------------------------------------------------------
+-Bug fixes
+-Things that I'm probably forgetting.
+
+Features:
+----------------------------------------------------------------------
+-Stuff
+and more.......
+
+Controls: 
+----------------------------------------------------------------------
+x = HP
+y = HK
+a = LP
+b = LK
+
+Throw: LP while close
+Roundhouse: B+HK
+Sweep: B+LK
+dash: F,F or B,B
+
+
+Move list:(Press start at intro, and start again when done.)
+----------------------------------------------------------------------
+
+OH SHIT! Sub-Zero is too tall!
+------------------------------------------------------------------------------
+Open "ninja.cns", a couple of lines down you should see something that looks like 
+this
+
+[Size]
+xscale = 1;.87
+yscale = 1;.87
+
+Get rid of "1;" so it looks like
+this
+
+[Size]
+xscale = .87
+yscale = .87
+
+Wow!
+
+
+
+
+Commands:
+----------------------------------------------------------------------
+Ice blast: D,F+LP
+Ice Sphere(in air): D,F+LP
+Slide: B+LP+LK
+Ice Fist: D,F+HP
+
+Fatality(next to opponent): F,D,F + HP
+note: to disable fatalities input D,U at intro
+
+Dial-a-combos
+----------------------------------
+HP, LP, D+LP
+
+(HK/LK), LK, B+HK
+
+HP, HK x 2
+
+HP, LP, LK, HK x 2
+         |
+        B+HK
+
+(HK/LK), LK, LP, D+LP
+              |
+              HP
+
+
+
+Issues:
+----------------------------------------------------------------------
+-Autoturn isn't perfect.
+-I know I'm forgetting something...........
+
+
+
+BLAH!
+
+
+
+I hate making readmes.
+
+
+
+
+

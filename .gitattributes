@@ -1,0 +1,7 @@
+# Preserve original game data, script encodings, CRLF and runtime SHA256 hashes.
+* -text
+
+# Only repository documentation/configuration uses normalized LF.
+README.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

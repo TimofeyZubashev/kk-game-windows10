@@ -1,0 +1,101 @@
+ ; Terminal — user-supplied animated airport artwork.
+; Original GIF frames/colors retained losslessly in PNG-backed SFF 2.1.
+; Viewport 4:3, fixed zoom; equivalent Sanctuary character scale.
+[Info]
+name = "Terminal"
+displayname = "Terminal"
+versiondate = 10,24,2026
+mugenversion = 1.1
+author = "Custom Fighting Game"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -299.350
+boundright = 299.350
+boundhigh = -54
+boundlow = 0
+verticalfollow = .6
+tension = 120
+floortension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 1
+
+[PlayerInfo]
+p1startx = -140
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 140
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -4000
+rightbound = 4000
+topbound = 0
+botbound = 0
+
+[Bound]
+screenleft = 30
+screenright = 30
+
+[StageInfo]
+localcoord = 640,480
+zoffset = 432
+autoturn = 1
+resetbg = 1
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 35
+color = 25,25,0
+yscale = .3
+fade.range = 160,40
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic =
+bgmvolume = 100
+bgm.loop = 1
+
+[BGdef]
+spr = terminal.sff
+debugbg = 0
+
+[BG AirportTerminal]
+type = anim
+actionno = 100
+layerno = 0
+start = 0,-58.958000
+delta = 1,1
+scalestart = 0.65,0.65
+mask = 0
+
+[Begin Action 9000]
+9000,1, 0,0,-1
+
+[Begin Action 100]
+Loopstart
+0,0, 0,0, 12
+0,1, 0,0, 12
+0,2, 0,0, 12
+0,3, 0,0, 12
+0,4, 0,0, 12
+0,5, 0,0, 12
+0,6, 0,0, 12
+0,7, 0,0, 12
+0,8, 0,0, 12
+0,9, 0,0, 12
+0,10, 0,0, 12
+0,11, 0,0, 12
+0,12, 0,0, 12
+0,13, 0,0, 12
+0,14, 0,0, 12
+0,15, 0,0, 12
+0,16, 0,0, 12
+0,17, 0,0, 12
+0,18, 0,0, 12

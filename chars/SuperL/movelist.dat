@@ -1,0 +1,82 @@
+	<#f4cf72>SUPER L</>
+	<#aab8c7>Moves & Controls</>
+
+<#72c8eb>BUTTONS</>
+Light Punch		^X
+Medium Punch		^Y
+Heavy Punch		^Z
+Light Kick		^A
+Medium Kick		^B
+Heavy Kick		^C
+<#aab8c7>Directions are relative to your opponent.</>
+<#aab8c7>A plus sign means simultaneous input.</>
+
+<#72c8eb>MOVEMENT & DEFENSE</>
+Forward Dash		_F_F
+Back Dash		_B_B
+Super Jump		_D_U
+Double Jump		_U
+<#aab8c7>Press Up again high enough during a jump.</>
+Quick Stand		_D
+<#aab8c7>Press Down as you hit the ground.</>
+High / Air Parry		_F
+Low Parry		_D
+<#aab8c7>Tap the direction just before the attack hits.</>
+Personal Action		^Z_+^C
+
+<#72c8eb>THROWS & UNIQUE ATTACKS</>
+Ground Throw		^X_+^A
+Forward Throw		_F_+^X_+^A
+Back Throw		_B_+^X_+^A
+<#aab8c7>Close range against a grounded opponent.</>
+Air Throw		^X_+^A
+<#aab8c7>Close range; both characters airborne.</>
+Forward Palm		_F_+^Y
+Leap Attack		^Y_+^B
+Light Kick > Medium Kick		^A > ^B
+<#aab8c7>Follow the far standing Light Kick.</>
+Close Medium Punch > Super Jump		^Y > _D_U
+<#aab8c7>Perform the jump during the close punch.</>
+
+<#72c8eb>EX MOVES — HOW TO USE</>
+<#aab8c7>EX moves are powered-up versions of certain specials.</>
+<#aab8c7>Use the normal motion, then press two buttons together.</>
+Two Punch buttons		[^X_+^Y/^Y_+^Z/^X_+^Z]
+Two Kick buttons		[^A_+^B/^B_+^C/^A_+^C]
+<#aab8c7>Use the button type required by that move.</>
+<#aab8c7>EX moves spend power; build meter before using them.</>
+<#aab8c7>EX specials require 400 power.</>
+<#aab8c7>Fireball / Uppercut use Punches; Hitobashira uses Kicks.</>
+<#aab8c7>Charge Back or Down for about 0.7 seconds.</>
+<#aab8c7>EX Super Arts have separate costs listed below.</>
+
+<#72c8eb>SPECIAL MOVES</>
+Charge Fireball <#aab8c7>[EX]</>		_B (hold) _F_+[^X/^Y/^Z]
+Rising Uppercut <#aab8c7>[EX]</>		_D (hold) _U_+[^X/^Y/^Z]
+Niouriki (Command Throw)		_F_D_B_+[^X/^Y/^Z]
+Hitobashira <#aab8c7>[EX]</>		_D_DF_F_+[^A/^B/^C]
+Air Hitobashira <#aab8c7>[EX]</>		_D_DF_F_+[^A/^B/^C]
+<#aab8c7>Air Hitobashira: perform during a jump.</>
+
+<#72c8eb>SUPER ART SELECTION</>
+Change Super Art during intro		_U / _D
+Confirm selection		[^X/^Y/^Z/^A/^B/^C]
+<#aab8c7>Choose I, II or III before the round begins.</>
+<#aab8c7>All three arts below use the same motion;</>
+<#aab8c7>your selection determines which one activates.</>
+
+<#72c8eb>SUPER ARTS</>
+I. Grab Mode <#aab8c7>[1040]</>		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+Grab Mode Follow-up		[^X/^Y/^Z]
+<#aab8c7>After activation, use Punch at close range.</>
+EX Grab Mode <#aab8c7>[1040]</>		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Press two Punch buttons for the EX activation.</>
+
+II. Energy Ball <#aab8c7>[880]</>		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Punch strength changes the trajectory.</>
+EX Energy Ball <#aab8c7>[2640]</>		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Press two Punch buttons; requires three stocks.</>
+
+III. Orbiting Stones <#aab8c7>[1120]</>		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+EX Orbiting Stones <#aab8c7>[1120]</>		_D_DF_F_D_DF_F_+[^X/^Y/^Z]
+<#aab8c7>Press two Punch buttons for the EX activation.</>

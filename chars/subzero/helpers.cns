@@ -1,0 +1,2256 @@
+;freeze blast
+[Statedef 7000]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 7000
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State sound]
+type = PlaySnd
+trigger1 = !time
+freqmul = .7
+value = 1, 2
+
+[State sound]
+type = velset
+trigger1 = time = 8
+x = 8
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State ò_ó]
+type = Explod
+trigger1 = time >= 6 && !(time%3)
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 40,20
+sprpriority = 2
+velocity = 0,2
+ownpal = 1
+
+[State ]
+type = Hitdef
+trigger1 = !movecontact
+damage = ifelse(((parent,var(41) = parent,var(58)) || (parent,var(58) = -1)) && enemynear,life = 1,1,0),0
+getpower = 0,0
+givepower = 0,0
+pausetime = 0,10
+attr = A,SP
+guardflag = M
+animtype = heavy
+air.animtype = back
+priority = 5, hit
+sparkno = S7001
+guard.sparkno = S7001
+sparkxy = 40, 0
+hitsound = S1,3
+guardsound = S0,7
+ground.type = high
+air.type = high
+ground.slidetime = 0
+ground.hittime = 15
+ground.velocity = 0, 0 
+air.velocity = 0, 0
+guard.velocity = -7
+air.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0
+yaccel = .5
+p1stateno = ifelse(!parent,var(2),7005,7001)
+p2stateno = ifelse(!parent,var(2),7002,7006)
+air.fall = 1
+fall = ifelse(parent,stateno = 6000 && (parent,prevstateno = [8000,8003]) && enemynear,movetype = H,1,0)
+fall.recover = 0
+fall.xvelocity = 0
+fall.yvelocity = 0
+numhits = 0
+
+[State don't playa hate]
+type = playerpush
+trigger1 = 1
+value = 0
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+trigger1 = moveguarded
+value = 7001
+
+[State end]
+type = destroyself
+trigger1 = time <= 7 && parent,movetype = H
+
+[State end]
+type = destroyself
+trigger1 = frontedgedist <= -150
+;---------------------------------------------------------------
+[Statedef 6099]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State end] 
+type = changeState
+trigger1 = 1
+value = 6099
+;------------------------------------------------------------
+;end
+[Statedef 7001]
+type    = A
+movetype= I
+physics = N
+;anim = 7001
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+flag2 = invisible
+
+[State end]
+type = parentvaradd
+trigger1 = !time
+var(2) = 1
+
+[State ]
+type = null;Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7007
+name = "o_O" 
+postype = p2
+pos = enemynear,const(size.mid.pos.x)+6,enemynear,const(size.mid.pos.y)
+persistent = 0
+ignorehitpause = 1
+stateno = 7007
+ownpal = 1
+
+[State end]
+type = destroyself
+trigger1 = time = 10
+;---------------------------------------------------------------------------
+;cool off
+[Statedef 7002]
+type    = U
+movetype= H
+physics = N
+velset = 0,0
+
+[State ] 
+type = assertspecial
+trigger1 = 1
+flag = nokosnd
+
+[State amination]
+type = ChangeAnim
+Trigger1 = 1
+value = anim
+elem = animelemno(0)
+
+[State blackness]
+type = palfx
+trigger1 = !(time%1)
+time = 1
+ignorehitpause = 1
+add = 70,70, 250
+
+[State is it over?]
+type = ChangeState
+Trigger1 = hitshakeover
+value = 7003
+;---------------------------------------------------------------------------
+;..............................
+[Statedef 7003]
+type    = U
+movetype= H
+physics = N
+velset = 0,0
+
+[State blackness]
+type = palfx
+trigger1 = !(time%1)
+time = 1
+ignorehitpause = 1
+add = 70,70, 250
+
+[State amination]
+type = ChangeAnim
+Trigger1 = 1
+value = anim
+elem = animelemno(0)
+
+[State ] 
+type = assertspecial
+trigger1 = 1
+flag = nokosnd
+
+[State wallbanger]
+type = selfstate
+triggerall = statetype != A && alive
+Trigger1 = time = 190
+ctrl = 1
+value = 0
+
+[State wallbanger]
+type = changestate
+triggerall = statetype != A && !alive
+Trigger1 = time = 60
+value = 7024
+
+[State wallbanger]
+type = ChangeState
+triggerall = statetype = A
+Trigger1 = time = 95;190
+value = 7004
+;---------------------------------------------------------------------------
+;..............................
+[Statedef 7004]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+
+[State amination]
+type = ChangeAnim
+Trigger1 = !time
+value = 5050
+
+[State amination]
+type = veladd
+Trigger1 = 1
+y = .5
+
+[State weeeeeee!]
+type = SelfState
+trigger1 = (Vel Y > 5) && (Pos Y >= 5)
+value = 5100
+;--------------------------------
+;freeze blasted
+[Statedef 7005]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 7002
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = Helper
+trigger1 = !time && numtarget
+helpertype = Normal
+ID = 7007
+name = "o_O" 
+postype = p2
+pos = target,const(size.mid.pos.x)+6,target,const(size.mid.pos.y)
+persistent = 0
+ignorehitpause = 1
+stateno = 7007
+ownpal = 1
+
+[State ]
+type = Helper
+triggerall = prevstateno = 7013
+trigger1 = !time
+helpertype = Normal
+ID = 7014
+name = "o_O" 
+postype = p1
+pos = 0,0
+persistent = 0
+ignorehitpause = 1
+stateno = 7014
+ownpal = 1
+
+
+[State end]
+type = parentvarset
+trigger1 = 1
+var(2) = 1
+
+[State ]
+type = bindtotarget
+Trigger1 = time = 1
+time = 2
+pos = 0,0, mid
+
+[State Super]
+type = SuperPause
+triggerall = numtarget
+trigger1 = !time
+anim = -1
+pos = 27,-55
+time = 0
+movetime = 0
+p2defmul = ifelse(target,gethitvar(hitcount)<= 1,.8,1.3)
+unhittable = 1
+darken = 0
+
+[State 1]
+type = Hitdef
+trigger1 = !movecontact
+damage = 0,0
+getpower = 0,0
+givepower = 0,0
+pausetime = 0,2
+attr = A,SP
+hitflag = HAF+
+animtype = heavy
+air.animtype = back
+priority = 5, hit
+sparkno = -1
+guard.sparkno = -1
+sparkxy = 0, 0
+ground.type = high
+air.type = high
+ground.slidetime = 0
+ground.hittime = 15
+ground.velocity = 0, 0 
+air.velocity = 0, 0
+guard.velocity = 0
+air.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0
+yaccel = .5
+p2stateno = 7002
+air.fall = 1
+fall.recover = 0
+fall.xvelocity = 0
+fall.yvelocity = 0
+numhits = 0
+
+[State end]
+type = destroyself
+trigger1 = time = 10
+;---------------------------------------------------------------------------
+;cool off
+[Statedef 7006]
+type    = U
+movetype= H
+physics = N
+velset = 0,0
+
+[State amination]
+type = ChangeAnim
+Trigger1 = 1
+value = anim
+elem = animelemno(0)
+
+[State wallbanger]
+type = selfstate
+triggerall = statetype != A
+Trigger1 = hitshakeover
+ctrl = 1
+value = 0
+
+[State wallbanger]
+type = ChangeState
+triggerall = statetype = A
+Trigger1 = hitshakeover
+value = 7004
+;-------------------------------------------------------------
+;particle man
+[Statedef 7007]
+type    = A
+movetype= I
+physics = N
+velset = 0,0
+anim = 9999
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7008
+name = "bwargh" 
+postype = p1
+pos = 0,0
+stateno = 7008
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State end]
+type = destroyself
+trigger1 = time = 11
+;-------------------------------------------------------------
+;particle
+[Statedef 7008]
+type    = A
+movetype= I
+physics = N
+anim = 7004
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State y]
+type = VarRandom
+trigger1 = 1
+v = 0
+range = -1,-5
+[State x]
+type = VarRandom
+trigger1 = 1
+v = 1
+range = -3,3
+
+[State ]
+type = velset
+trigger1 = time = 1
+y = var(0)
+x = var(1)
+
+[State ]
+type = veladd
+trigger1 = time >= 3
+y = .3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+triggerall = time >= 5
+trigger1 = (Vel Y > 0)&&(Pos Y >= 0)
+value = 7009
+;-------------------------------------------------------------
+;particle bounce
+[Statedef 7009]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = velset
+trigger1 = !time
+y = -5
+
+[State ]
+type = posset
+trigger1 = !time
+y = 0
+
+[State ]
+type = veladd
+trigger1 = 1
+y = .5
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State blackness]
+type = palfx
+trigger1 = !time
+time = 30
+add = 0,0,0
+sinadd = -250,-250, -250, 100
+
+[State end]
+type = destroyself
+trigger1 = time = 21
+;----------------------------------------
+;puddle
+[Statedef 7010]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 7006
+velset = 0,0
+ctrl = 0
+sprpriority = 1
+
+[State ò_ó]
+type = Explod
+trigger1 = time <= 4
+anim = 7007
+id = 7007
+removetime = 1
+Postype = p1
+bindtime = -1
+pos = 0,0
+scale = 0+fvar(0),0+fvar(0)
+sprpriority = 1
+
+[State ò_ó]
+type = varadd
+trigger1 = time <= 4
+fvar(0) = .25
+
+[State blerg]
+type = AfterImage
+trigger1 = !time
+time = 17
+framegap = 1
+palcolor = 60
+trans = add
+palbright = 0,0,0
+palcontrast = 90,90,90
+
+[State ]
+type = bindtoparent
+trigger1 = 1
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+trigger1 = (parent,anim = 6003 && !parent,animelemtime(5)) || parent,movetype = H || parent,stateno != 6003
+value = 7011
+;----------------------------------------
+;puddle
+[Statedef 7011]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 9999
+velset = 0,0
+ctrl = 0
+sprpriority = 1
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State blerg]
+type = AfterImage
+trigger1 = !time
+time = 0
+
+[State ]
+type = posset
+trigger1 = 1
+y = 0
+
+[State ò_ó]
+type = Explod
+trigger1 = 1
+anim = 7007
+id = 7007
+removetime = 1
+Postype = p1
+bindtime = -1
+pos = 0,0
+scale = 1-fvar(1),1-fvar(1)
+sprpriority = -1
+
+[State ò_ó]
+type = varadd
+trigger1 = 1
+fvar(1) = .1
+
+[State end]
+type = destroyself
+trigger1 = time = 10
+;----------------------------------------
+;blast
+[Statedef 7012]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 9999
+velset = 0,0
+ctrl = 0
+sprpriority = 1
+
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = 6,6
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = 1,-4
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = -6,-5
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = 5,-4
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = 5,-3
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = 2,5
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = -2,-2
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = -5,-4
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = -7,0
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 0,0
+ontop = 1
+velocity = 1,-1
+ownpal = 1
+
+
+[State end]
+type = destroyself
+trigger1 = time = 30
+;----------------------------------------------
+;freeze blast
+[Statedef 7013]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 7008
+velset = 7,0
+ctrl = 0
+sprpriority = 3
+
+[State sound]
+type = PlaySnd
+trigger1 = !time
+;freqmul = 1.2
+value = 1, 2
+
+[State sound]
+type = veladd
+trigger1 = time <= 13
+x = -.5
+
+[State ò_ó]
+type = Explod
+trigger1 = !(time%3)
+anim = 7003
+id = 7003
+Postype = p1
+pos = 0,0
+random = 40,20
+sprpriority = 2
+velocity = 0,3
+ownpal = 1
+
+[State ]
+type = Hitdef
+trigger1 = !movecontact
+damage = ifelse(((parent,var(41) = parent,var(58)) || (parent,var(58) = -1)) && enemynear,life = 1,1,0),0
+getpower = 0,0
+givepower = 0,0
+pausetime = 0,10
+attr = A,SP
+guardflag = M
+animtype = heavy
+air.animtype = back
+priority = 5, hit
+sparkno = -1
+guard.sparkno = -1
+sparkxy = 40, 0
+hitsound = S1,3
+guardsound = S0,7
+ground.type = high
+air.type = high
+ground.slidetime = 0
+ground.hittime = 15
+ground.velocity = 0, 0 
+air.velocity = 0, 0
+guard.velocity = -7
+air.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0
+yaccel = .5
+p1stateno = ifelse(!parent,var(2),7005,7014)
+p2stateno = ifelse(!parent,var(2),7002,7006)
+air.fall = 1
+fall.recover = 0
+fall.xvelocity = 0
+fall.yvelocity = 0
+numhits = 0
+
+[State don't playa hate]
+type = playerpush
+trigger1 = 1
+value = 0
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+trigger1 = moveguarded || time = 80
+value = 7014
+
+[State end]
+type = destroyself
+trigger1 = frontedgedist <= -150
+;----------------------------------------
+;end
+[Statedef 7014]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 9999
+velset = 0,0
+movehitpersist = 1
+ctrl = 0
+sprpriority = 1
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State ò_ó]
+type = Explod
+trigger1 = 1
+anim = 7008
+id = 7008
+removetime = 1
+Postype = p1
+bindtime = -1
+pos = 0,0
+scale = 1-fvar(1),1-fvar(1)
+sprpriority = -1
+
+[State ò_ó]
+type = varadd
+trigger1 = 1
+fvar(1) = .1
+
+[State end]
+type = parentvaradd
+trigger1 = !time && movecontact
+var(2) = 1
+
+[State end]
+type = destroyself
+trigger1 = time = 10
+;-------------------------------------------------------------
+;elbow stuffs
+[Statedef 7015]
+type    = A
+movetype= I
+physics = N
+velset = 0,0
+anim = 9999
+ctrl = 0
+sprpriority = 3
+
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7010
+id = 7010
+Postype = p1
+pos = 0,0
+vel = -3,0
+sprpriority = 1
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7010
+id = 7010
+Postype = p1
+pos = 0,0
+vel = -2.7,-0.5
+sprpriority = 1
+ownpal = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7010
+id = 7010
+Postype = p1
+pos = 0,0
+vel = -3.3,-0.9
+sprpriority = 1
+ownpal = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+
+[State end]
+type = destroyself
+trigger1 = !(parent,animelemtime(1)) || parent,movetype != A || time = 200
+;-------------------------------------------------------------
+;blood drop
+[Statedef 7016]
+type    = A
+movetype= I
+physics = N
+anim = 7011
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State y]
+type = VarRandom
+trigger1 = 1
+v = 0
+range = -3,-7
+[State x]
+type = VarRandom
+trigger1 = 1
+v = 1
+range = -6,-1
+
+[State ]
+type = velset
+trigger1 = time = 1
+y = var(0)
+x = var(1)
+
+[State ]
+type = veladd
+trigger1 = time >= 1
+y = .3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+triggerall = time >= 5
+trigger1 = (Vel Y > 0)&&(Pos Y >= 0)
+value = 7017
+;-------------------------------------------------------------
+;splat
+[Statedef 7017]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 7012
+velset = 0,0
+sprpriority = 1
+
+[State ]
+type = posset
+trigger1 = !time
+y = 0
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = destroyself
+trigger1 = !animtime
+;-------------------------------------------------------------
+;big bloody stuff
+[Statedef 7018]
+type    = A
+movetype= I
+physics = N
+velset = 0,0
+anim = 9999
+ctrl = 0
+sprpriority = 3
+
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7013
+id = 7013
+Postype = p1
+pos = -1,0
+sprpriority = 3
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7013
+id = 7013
+facing = -1
+Postype = p1
+pos = 0,0
+sprpriority = 3
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7016
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+
+
+[State end]
+type = destroyself
+trigger1 = !(parent,animelemtime(1)) || parent,movetype != A || time = 200
+;------------------------------------------------------------
+;moves
+[Statedef 7019]
+type    = A
+movetype= I
+physics = N
+anim = 9999
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State menu] 
+type = explod
+trigger1 = !time
+id = 7017
+anim = 7014
+pos = 0,0
+bindtime = -1
+ontop = 1
+postype = left
+ownpal = 1
+
+[State menu] 
+type = explod
+trigger1 = !time
+id = 7017
+anim = 7016
+pos = 0,0
+bindtime = -1
+removetime = 999999
+ontop = 1
+postype = left
+ownpal = 1
+
+[State menu] 
+type = explod
+trigger1 = !time
+id = 7017
+anim = 7017
+pos = 0,0
+removetime = 999999
+bindtime = -1
+ontop = 1
+postype = left
+
+[State  ]
+type = PlaySnd
+trigger1 = !time
+abspan = 1
+value = 5, 0
+[State  ]
+type = PlaySnd
+trigger1 = (time >= 5 && (parent,command = "start" || parent,command = "a" || parent,command = "b" || parent,command = "c" || parent,command = "x" || parent,command = "y" || parent,command = "z"))
+abspan = 1
+value = 1, 4
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = intro
+flag2 = nobardisplay
+
+[State what?]
+type = DisplayToClipboard
+trigger1 = 1
+text = "what:%d nehpoenp"
+params = parent,var(58)
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State end]
+type = changestate
+trigger1 = (time >= 5 && parent,command = "start")
+value = 7020
+
+[State blackness]
+type = palfx
+trigger1 = !(time%2)
+time = 2
+add = -150,-150, -150
+;sinadd = -250,-250, -250, 90
+
+[State end]
+type = destroyself
+trigger1 = roundstate = 2
+;------------------------------------------------------------
+;moves
+[Statedef 7020]
+type    = A
+movetype= I
+physics = N
+anim = 9999
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State menu] 
+type = explod
+trigger1 = !time
+id = 7015
+anim = 7015
+pos = 0,0
+bindtime = -1
+ontop = 1
+postype = left
+ownpal = 1
+
+[State menu] 
+type = removeexplod
+trigger1 = 1
+id = 7017
+
+[State end]
+type = destroyself
+trigger1 = time = 1
+;-------------------------------------------------------------
+;f starter
+[Statedef 7021]
+type    = A
+movetype= A
+physics = N
+velset = 0,0
+anim = 7019
+ctrl = 0
+sprpriority = 3
+
+[State grabby]
+type = HitDef
+Trigger1 = !movecontact
+attr = C, HP 
+hitflag = MFD
+priority = 1, Miss 
+sparkno = -1 
+sprpriority = -1
+p1stateno = 7023 
+p2stateno = ifelse(p2statetype = L,7025,7022)
+guard.dist = 0
+fall = 1 
+fall.recover = 0
+numhits = 0
+
+[State ]
+type = posset
+trigger1 = 1
+x = floor(enemynear,pos x)
+y = floor(enemynear,pos y)
+
+[State end]
+type = destroyself
+trigger1 = !animtime
+;-------------------------------------------------------------
+;f starter dizzy
+[Statedef 7022]
+type    = S
+movetype= I
+physics = N
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State ] 
+type = ChangeAnim
+trigger1 = !time
+value = 5300
+[State ] 
+type = posset
+trigger1 = !time
+y = 0
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = timerfreeze
+
+
+[State ] 
+type = assertspecial
+trigger1 = time = 300
+flag = nokosnd
+[State ] 
+type = lifeset
+trigger1 = time = 300
+value = 0
+[State away with you] 
+type = changestate
+trigger1 = time = 300
+value = 7024
+;-------------------------------------------------------------
+;fatal thing
+[Statedef 7023]
+type    = A
+movetype= A
+physics = N
+velset = 0,0
+anim = 9999
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = parentvarset
+trigger1 = 1
+var(4) = 1
+
+[State ]
+type = bindtoparent
+trigger1 = 1
+
+[State ]
+type = varset
+trigger1 = (parent,stateno = 6052 || parent,stateno = 6054)
+var(0) = 1
+
+[State Sound]
+type = PlaySnd
+trigger1 = parent,time = 220 && var(0) = 1 && parent,stateno = 180 && parent,winperfect
+trigger2 = parent,time = 120 && var(0) = 1 && parent,stateno = 180 && !parent,winperfect
+persistent = 0
+abspan = 0
+value = 4, 7
+
+[State ]
+type = assertspecial
+trigger1 = var(0)
+flag = nomusic
+flag2 = timerfreeze
+;---------------------------------------------------------------
+;time over death
+[Statedef 7024]
+type    = A
+movetype= H
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State ] 
+type = ChangeAnim2
+trigger1 = !time
+value = 6012
+
+[State ] 
+type = posset
+trigger1 = 1
+y = 0
+
+[State weeeeeee!]
+type = SelfState
+trigger1 = !animtime
+value = 5150
+;---------------------------------------------------------------
+;get up and get dizzy
+[Statedef 7025]
+type    = A
+movetype= H
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State ] 
+type = ChangeAnim2
+trigger1 = !time
+value = 6013
+
+[State ] 
+type = ChangeAnim
+trigger1 = time = 12
+value = 5120
+
+[State weeeeeee!]
+type = changestate
+trigger1 = anim = 5120 && !animtime || time = 30
+value = 7022
+;---------------------------------------
+;
+[Statedef 7026]
+type    = A
+movetype= I
+physics = N
+poweradd= 0
+anim = 9999
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State yo]
+type = DisplayToClipboard
+trigger1 = !(time % 2)
+text = "P e p e  : Your mom:%d"
+params = var(1)
+
+[State yo]
+type = DisplayToClipboard
+trigger1 = time %3 = 1
+text = " n o h n : your Mom:%d"
+params = var(1)
+
+[State ]
+type = bindtoparent
+trigger1 = 1
+
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State turn]
+type = turn
+triggerall = (parent,facing = 1 && facing = -1) || (parent,facing = -1 && facing = 1)
+trigger1 = 1
+
+[State sound]
+type = PlaySnd
+trigger1 = parent,life <= 200
+persistent = 0
+abspan = 1
+value = 3, 7
+
+[State sound]
+type = PlaySnd
+triggerall = roundstate = 2
+trigger1 = !parent,var(4) && ((parent,var(41) = parent,var(58)) || (parent,var(58) = -1)) && enemynear,life = 1
+persistent = 0
+value = 4, 0
+abspan = 1
+
+[State ò_ó]
+type = Explod
+triggerall = parent,stateno = 0 && parent,anim = 0
+trigger1 = !(gametime % 150)
+anim = 7027
+id = 7027
+Postype = p1
+pos = ceil(7*parent,const(size.xscale)),ceil(-107*parent,const(size.yscale))
+sprpriority = 3
+scale = parent,const(size.xscale),parent,const(size.yscale)
+;ownpal = 1
+
+[State blackness]
+type = palfx
+trigger1 = !(time%2)
+time = 2
+add = -50,-50, -50
+;---------------------------------------
+;get head
+[Statedef 7027]
+type    = A
+movetype= I
+physics = N
+poweradd= 0
+anim = 7020
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = posset
+trigger1 = 1
+x = floor(enemynear,pos x)
+y = floor(enemynear,pos y)
+;----------------------------------------
+;dayum
+[Statedef 7028]
+type    = A
+movetype= A
+physics = N
+poweradd= 0
+anim = 9999
+velset = 0,0
+ctrl = 0
+sprpriority = 1
+
+[State ]
+type = playsnd
+trigger1 = !time
+value = 1,8
+
+[State blackness]
+type = null;palfx
+trigger1 = !(time%2)
+time = 2
+add = -50,-50, -50
+
+[State ò_ó]
+type = Explod
+trigger1 = time <= 4
+anim = 7022
+id = 7021
+removetime = 1
+Postype = p1
+bindtime = -1
+pos = 0,0
+scale = 0+fvar(0),0+fvar(0)
+sprpriority = 3
+
+[State ò_ó]
+type = Explod
+trigger1 = time = 5
+anim = 7022
+id = 7021
+removetime = 4
+Postype = p1
+bindtime = -1
+pos = 0,0
+sprpriority = 3
+
+[State ò_ó]
+type = Explod
+trigger1 = time >= 9
+anim = 7022
+id = 7021
+removetime = 1
+Postype = p1
+bindtime = -1
+pos = 0,0
+scale = 1-fvar(1),1-fvar(1)
+sprpriority = 3
+
+[State ò_ó]
+type = varadd
+trigger1 = time <= 4
+fvar(0) = .2
+[State ò_ó]
+type = varadd
+trigger1 = time >= 9
+fvar(1) = .1
+
+[State end]
+type = destroyself
+trigger1 = time = 19
+;---------------------------------------------------------------
+[Statedef 6099]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State end] 
+type = changeState
+trigger1 = 1
+value = 6099
+;-------------------------------------------------------------
+;fatal splode
+[Statedef 7029]
+type    = A
+movetype= I
+physics = N
+velset = 0,0
+anim = 9999
+ctrl = 0
+sprpriority = 3
+
+[State sound]
+type = PlaySnd
+trigger1 = !time
+value = 4, 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+ID = 7010
+name = "drop" 
+postype = p1
+pos = 0,0
+stateno = 7016
+ownpal = 1
+facing = -1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "arm" 
+postype = p1
+pos = 0,0
+stateno = 7030
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "arm" 
+postype = p1
+pos = 0,0
+stateno = 7030
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "bone" 
+postype = p1
+pos = 0,0
+stateno = 7030
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "bone" 
+postype = p1
+pos = 0,0
+stateno = 7030
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "leg" 
+postype = p1
+pos = 0,0
+stateno = 7030
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "leg" 
+postype = p1
+pos = 0,0
+stateno = 7030
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "ribs" 
+postype = p1
+pos = 0,0
+stateno = 7031
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+[State ]
+type = Helper
+trigger1 = !time
+helpertype = Normal
+name = "brain container" 
+postype = p1
+pos = 0,0
+stateno = 7032
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+
+
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7023
+Postype = p1
+pos = 0,30
+sprpriority = 3
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7023
+Postype = p1
+pos = 0,0
+sprpriority = 3
+[State ò_ó]
+type = Explod
+trigger1 = !time
+anim = 7023
+Postype = p1
+pos = 0,-30
+sprpriority = 3
+
+[State shake]
+type = EnvShake
+trigger1 = !time
+time = 20
+ampl = -5
+
+[State end]
+type = destroyself
+trigger1 = time = 5
+;-------------------------------------------------------------
+;bone
+[Statedef 7030]
+type    = A
+movetype= I
+physics = N
+anim = 7024
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State y]
+type = VarRandom
+trigger1 = 1
+v = 0
+range = -1,-7
+[State x]
+type = VarRandom
+trigger1 = 1
+v = 1
+range = -4,4
+
+[State ]
+type = velset
+trigger1 = time = 1
+y = var(0)
+x = var(1)
+
+[State ]
+type = veladd
+trigger1 = time >= 3
+y = .3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+triggerall = time >= 5
+trigger1 = (Vel Y > 0)&&(Pos Y >= 0)
+value = 7033
+;---------------------------------------------------------------
+[Statedef 6099]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State end] 
+type = changeState
+trigger1 = 1
+value = 6099
+;-------------------------------------------------------------
+;ribs
+[Statedef 7031]
+type    = A
+movetype= I
+physics = N
+anim = 7025
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State y]
+type = VarRandom
+trigger1 = 1
+v = 0
+range = -1,-7
+[State x]
+type = VarRandom
+trigger1 = 1
+v = 1
+range = -4,4
+
+[State ]
+type = velset
+trigger1 = time = 1
+y = var(0)
+x = var(1)
+[State ]
+type = ChangeState
+value = 6099
+triggerall = name != "Pneophen's real cool guy"
+trigger1 = 1
+
+[State ]
+type = veladd
+trigger1 = time >= 3
+y = .3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+triggerall = time >= 5
+trigger1 = (Vel Y > 0)&&(Pos Y >= 0)
+value = 7033
+;-------------------------------------------------------------
+;skull
+[Statedef 7032]
+type    = A
+movetype= I
+physics = N
+anim = 7026
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State y]
+type = VarRandom
+trigger1 = 1
+v = 0
+range = -1,-7
+[State x]
+type = VarRandom
+trigger1 = 1
+v = 1
+range = -4,4
+
+[State ]
+type = velset
+trigger1 = time = 1
+y = var(0)
+x = var(1)
+
+[State ]
+type = veladd
+trigger1 = time >= 3
+y = .3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State end]
+type = changestate
+triggerall = time >= 5
+trigger1 = (Vel Y > 0)&&(Pos Y >= 0)
+value = 7033
+;-------------------------------------------------------------
+;body part bounceroo
+[Statedef 7033]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+sprpriority = 3
+
+[State ]
+type = velset
+trigger1 = !time
+y = -6
+
+[State ]
+type = posset
+trigger1 = !time
+y = 0
+
+[State ]
+type = veladd
+trigger1 = 1
+y = .3
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State sound]
+type = PlaySnd
+trigger1 = !time
+value = 4, 2
+
+[State end]
+type = changestate
+triggerall = time >= 5
+trigger1 = (Vel Y > 0)&&(Pos Y >= 0)
+value = 7034
+;---------------------------------------------------------------
+[Statedef 6099]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State end] 
+type = changeState
+trigger1 = 1
+value = 6099
+;-------------------------------------------------------------
+;body part bounceroo
+[Statedef 7034]
+type    = A
+movetype= I
+physics = N
+velset = 0,0
+ctrl = 0
+sprpriority = 3
+
+[State sound]
+type = PlaySnd
+trigger1 = !time
+value = 4, 2
+
+[State ]
+type = assertspecial
+trigger1 = 1
+flag = noshadow
+
+[State ]
+type = ChangeAnim
+Trigger1 = 1
+value = anim
+elem = animelemno(0)
+
+
+
+
+
+
+
+

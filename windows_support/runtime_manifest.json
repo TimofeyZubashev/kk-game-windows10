@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "engine_version": "v1.0.0-rc.5",
+  "engine_commit": "ba516193bba83f13f0b63ddce314d8719793931f",
+  "architecture": "windows-amd64",
+  "release_url": "https://github.com/ikemen-engine/Ikemen-GO/releases/tag/v1.0.0-rc.5",
+  "official_release_archive_sha256": "1f02dd94f91b08b2d673581427b25fd43f9b771e39e8f3761ca41dbefbe844ce",
+  "archive_sha256": "9b2668a47954eef41f6d9706f4ddc97a53154a211b64b0008e8357983710297c",
+  "files": [
+    {
+      "path": "Ikemen_GO.exe",
+      "size": 14501376,
+      "sha256": "0a742cf5bdd2b64556dda44cf3bff02aa23093b44cd6bce000c0f3ba413f0225"
+    },
+    {
+      "path": "lib/SDL2.dll",
+      "size": 2412441,
+      "sha256": "47a3b27654832d9f7e5719c88078210a3dbfd6407b559c5a3c4eb8ab7d0ebdb6"
+    },
+    {
+      "path": "lib/avcodec-61.dll",
+      "size": 1264128,
+      "sha256": "354776ab587a97823037b67708770ad831efb0bf49e5a20518a4a6935afdf375"
+    },
+    {
+      "path": "lib/avdevice-61.dll",
+      "size": 14848,
+      "sha256": "e67ea9a6cc84a5ec9afeebff35ffa6d46ca5ad0301e9e3ee3a13fe67ea73143e"
+    },
+    {
+      "path": "lib/avfilter-10.dll",
+      "size": 196096,
+      "sha256": "14874298726fc19e0eb4db9330bbbd5d415bfba9687cbcebc745ce039a1b4455"
+    },
+    {
+      "path": "lib/avformat-61.dll",
+      "size": 399360,
+      "sha256": "03ca359b81c1d0bc27848da0acefe67add3c789d54ff46c4f24db4e13c336adb"
+    },
+    {
+      "path": "lib/avutil-59.dll",
+      "size": 1035264,
+      "sha256": "569083e342b0820cb8961f7df6a250bd7bc586e274cb298c6821a55fab51c595"
+    },
+    {
+      "path": "lib/libgcc_s_seh-1.dll",
+      "size": 150998,
+      "sha256": "b37c1770c8ca092700875845b34918803ee6311573eba1c32ff4b1166e4a0e1e"
+    },
+    {
+      "path": "lib/libstdc++-6.dll",
+      "size": 2661299,
+      "sha256": "887c21dbe2a211ac4d1a790e4f608b7dee27fae12352856963004e7a715d2e6c"
+    },
+    {
+      "path": "lib/libwinpthread-1.dll",
+      "size": 63840,
+      "sha256": "2e74ef2965ec0d8f7e0543f40293b212d2f5c8680de147643ea6dd4b8b5cb749"
+    },
+    {
+      "path": "lib/libxmp.dll",
+      "size": 844252,
+      "sha256": "0134f1cdc3de2778cd11f5061a0408f05673df708a56b380cb9b1213ef7970df"
+    },
+    {
+      "path": "lib/swresample-5.dll",
+      "size": 122368,
+      "sha256": "18f7b77d3935ad0f4451d9ba7947ce159c39bfc780a3244fe3284532cd49a331"
+    },
+    {
+      "path": "lib/swscale-8.dll",
+      "size": 666624,
+      "sha256": "92539646836908063827a28b4ef4c857d769f35b376ae27ce92991cd42084fef"
+    }
+  ]
+}

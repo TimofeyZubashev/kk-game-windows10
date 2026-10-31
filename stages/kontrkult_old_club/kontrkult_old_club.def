@@ -1,0 +1,234 @@
+[Info]
+name = "KontrKult Old Club"
+displayname = "KontrKult Old Club"
+versiondate = 10,30,2026
+mugenversion = 1.1
+author = "Custom Fighting Game"
+
+
+round2def = kontrkult_old_club_round2.def
+roundloop = 0
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -219.39999999999998
+boundright = 219.39999999999998
+boundhigh = -104
+boundlow = 0
+verticalfollow = .6
+tension = 120
+floortension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 1
+
+[PlayerInfo]
+p1startx = -140
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 140
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -4000
+rightbound = 4000
+topbound = 0
+botbound = 0
+
+[Bound]
+screenleft = 30
+screenright = 30
+
+[StageInfo]
+localcoord = 640,480
+zoffset = 432
+autoturn = 1
+resetbg = 1
+xscale = 1
+yscale = 1
+portraitscale = 2
+
+[Shadow]
+intensity = 35
+color = 25,25,0
+yscale = .3
+fade.range = 160,40
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = 
+bgmvolume = 100
+bgm.loop = 1
+
+[BGdef]
+spr = kontrkult_old_club.sff
+debugbg = 0
+
+[BG OldClub]
+type = anim
+actionno = 100
+id = 10
+layerno = 0
+start = 0,-106.252000
+delta = 1,1
+scalestart = 0.65,0.65
+mask = 0
+
+[BG RicardoWindow]
+type = anim
+actionno = 1000
+id = 1000
+layerno = 0
+start = 0,-106.252000
+delta = 1,1
+scalestart = 0.65,0.65
+mask = 1
+
+; Bat graphics and motion from KK Graveyard, by Tradt-Production.
+[BG OldClub Bat 1]
+layerno = 0
+type = anim
+actionno = 2000
+delta = 1,1
+start = -300,45
+mask = 1
+velocity = 3.9,0
+tile = 1,0
+tilespacing = 2900,0
+sin.y = 30,400
+
+[BG OldClub Bat 2]
+layerno = 0
+type = anim
+actionno = 2000
+delta = 1,1
+start = -350,75
+mask = 1
+velocity = 3.7,0
+tile = 1,0
+tilespacing = 2900,0
+sin.y = 30,400
+
+[BG OldClub Bat 3]
+layerno = 0
+type = anim
+actionno = 2000
+delta = 1,1
+start = -220,105
+mask = 1
+velocity = 3.8,0
+tile = 1,0
+tilespacing = 2900,0
+sin.y = 30,400
+
+[BG OldClub Bat 4]
+layerno = 0
+type = anim
+actionno = 2000
+delta = 1,1
+start = -390,135
+mask = 1
+velocity = 4,0
+tile = 1,0
+tilespacing = 2900,0
+sin.y = 30,200
+
+[BG WindowAsset]
+type = anim
+actionno = 3100
+id = 3100
+layerno = 0
+start = 0,-106.252000
+delta = 1,1
+scalestart = 0.65,0.65
+mask = 1
+
+[Begin Action 9000]
+9000,1, 0,0,-1
+
+[Begin Action 100]
+Loopstart
+0,0, 0,0,24
+0,1, 0,0,24
+0,2, 0,0,24
+0,3, 0,0,24
+0,4, 0,0,24
+0,5, 0,0,24
+0,6, 0,0,24
+0,7, 0,0,24
+0,8, 0,0,24
+0,9, 0,0,24
+0,10, 0,0,24
+
+; First appearance at 15 s; starts repeat every 900 ticks (15 s).
+; Aseprite source: 39 frames at 50 ms = 3 ticks per frame (20 FPS).
+[Begin Action 1000]
+-1,0, 0,0,900
+Loopstart
+1000,0, 0,0,3
+1000,1, 0,0,3
+1000,2, 0,0,3
+1000,3, 0,0,3
+1000,4, 0,0,3
+1000,5, 0,0,3
+1000,6, 0,0,3
+1000,7, 0,0,3
+1000,8, 0,0,3
+1000,9, 0,0,3
+1000,10, 0,0,3
+1000,11, 0,0,3
+1000,12, 0,0,3
+1000,13, 0,0,3
+1000,14, 0,0,3
+1000,15, 0,0,3
+1000,16, 0,0,3
+1000,17, 0,0,3
+1000,18, 0,0,3
+1000,19, 0,0,3
+1000,20, 0,0,3
+1000,21, 0,0,3
+1000,22, 0,0,3
+1000,23, 0,0,3
+1000,24, 0,0,3
+1000,25, 0,0,3
+1000,26, 0,0,3
+1000,27, 0,0,3
+1000,28, 0,0,3
+1000,29, 0,0,3
+1000,30, 0,0,3
+1000,31, 0,0,3
+1000,32, 0,0,3
+1000,33, 0,0,3
+1000,34, 0,0,3
+1000,35, 0,0,3
+1000,36, 0,0,3
+1000,37, 0,0,3
+1000,38, 0,0,3
+-1,0, 0,0,783
+
+[Begin Action 2000]
+2000,0, 0,0, 5
+2000,1, 0,0, 5
+2000,2, 0,0, 5
+2000,3, 0,0, 5
+
+; Window asset starts at 10 seconds and repeats every 600 ticks.
+[Begin Action 3100]
+-1,0,0,0,600
+Loopstart
+3100,0,0,0,24
+3100,1,0,0,24
+3100,2,0,0,24
+3100,3,0,0,24
+3100,4,0,0,24
+3100,5,0,0,24
+3100,6,0,0,24
+3100,7,0,0,24
+3100,8,0,0,24
+3100,9,0,0,24
+3100,10,0,0,24
+-1,0,0,0,336

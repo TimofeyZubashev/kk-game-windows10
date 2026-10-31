@@ -1,0 +1,29 @@
+[Info]
+Name="BAIKEN"
+DisplayName="Baiken"
+Author="çÇçËÅ@èM"
+Pal.Defaults=1,2,7,8
+
+[Files]
+cmd     = ETC/baiken.cmd 
+cns     = CNS/baiken.cns
+st      = CNS/baiken.cns
+;------------------------------------------
+stcommon= CNS/common1.cns
+sprite  = ETC/baiken.sff
+anim    = ETC/baiken.air
+movelist = movelist.dat
+sound   = ETC/baiken.snd
+;------------------------------------------
+pal1    = ACT/baiken01.act ;
+pal2    = ACT/baiken02.act ;
+pal3    = ACT/baiken03.act ;
+pal4    = ACT/baiken04.act ;
+pal5    = ACT/baiken05.act ;
+pal6    = ACT/baiken06.act ;
+pal7    = ACT/baiken07.act ;
+pal8    = ACT/baiken08.act ;
+pal9    = ACT/baiken09.act ;
+pal10   = ACT/baiken10.act ;
+pal11   = ACT/baiken11.act ;
+pal12   = ACT/baikensp.act ;

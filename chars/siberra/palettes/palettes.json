@@ -1,0 +1,3183 @@
+{
+  "schema_version": 1,
+  "state": "SFFv1 unchanged; base palette restored in slots1-11; white experimental palette only in slot12",
+  "runtime_sff": "sf3_ibuki.sff",
+  "runtime_ACT": "act/siberra.act",
+  "sff_sha256": "1c9ca17014f0021b3b3850a8dd4e1902fc2fd09ae9a68d478b23d36a73af42b5",
+  "ACT_sha256": "4e2fbce69ddfaeb9731ccc1d3b00a7225bfcf246ab94f4d611400ce021e1180e",
+  "combat_palette": {
+    "base_sprite": [
+      0,
+      0
+    ],
+    "base_sff_sha256": "09e8735cce8f44a914b151e45a5048bbaaffd64886f1a824599fd526a5267011",
+    "preserved_indices": [
+      1,
+      79
+    ],
+    "body_indices": [
+      1,
+      48
+    ],
+    "transparent_index": 0,
+    "opaque_count": 105,
+    "free_opaque_slots": 150,
+    "colors": [
+      {
+        "index": 1,
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#010101"
+      },
+      {
+        "index": 2,
+        "rgb": [
+          253,
+          189,
+          113
+        ],
+        "hex": "#FDBD71"
+      },
+      {
+        "index": 3,
+        "rgb": [
+          165,
+          63,
+          49
+        ],
+        "hex": "#A53F31"
+      },
+      {
+        "index": 4,
+        "rgb": [
+          63,
+          55,
+          60
+        ],
+        "hex": "#3F373C"
+      },
+      {
+        "index": 5,
+        "rgb": [
+          226,
+          117,
+          78
+        ],
+        "hex": "#E2754E"
+      },
+      {
+        "index": 6,
+        "rgb": [
+          73,
+          13,
+          1
+        ],
+        "hex": "#490D01"
+      },
+      {
+        "index": 7,
+        "rgb": [
+          193,
+          1,
+          1
+        ],
+        "hex": "#C10101"
+      },
+      {
+        "index": 8,
+        "rgb": [
+          34,
+          29,
+          33
+        ],
+        "hex": "#221D21"
+      },
+      {
+        "index": 9,
+        "rgb": [
+          250,
+          149,
+          82
+        ],
+        "hex": "#FA9552"
+      },
+      {
+        "index": 10,
+        "rgb": [
+          118,
+          37,
+          18
+        ],
+        "hex": "#762512"
+      },
+      {
+        "index": 11,
+        "rgb": [
+          118,
+          66,
+          57
+        ],
+        "hex": "#764239"
+      },
+      {
+        "index": 12,
+        "rgb": [
+          253,
+          209,
+          149
+        ],
+        "hex": "#FDD195"
+      },
+      {
+        "index": 13,
+        "rgb": [
+          174,
+          137,
+          91
+        ],
+        "hex": "#AE895B"
+      },
+      {
+        "index": 14,
+        "rgb": [
+          146,
+          85,
+          70
+        ],
+        "hex": "#925546"
+      },
+      {
+        "index": 15,
+        "rgb": [
+          65,
+          33,
+          34
+        ],
+        "hex": "#412122"
+      },
+      {
+        "index": 16,
+        "rgb": [
+          198,
+          90,
+          65
+        ],
+        "hex": "#C65A41"
+      },
+      {
+        "index": 17,
+        "rgb": [
+          81,
+          72,
+          78
+        ],
+        "hex": "#51484E"
+      },
+      {
+        "index": 18,
+        "rgb": [
+          38,
+          1,
+          0
+        ],
+        "hex": "#260100"
+      },
+      {
+        "index": 19,
+        "rgb": [
+          89,
+          49,
+          46
+        ],
+        "hex": "#59312E"
+      },
+      {
+        "index": 20,
+        "rgb": [
+          18,
+          14,
+          17
+        ],
+        "hex": "#120E11"
+      },
+      {
+        "index": 21,
+        "rgb": [
+          218,
+          165,
+          105
+        ],
+        "hex": "#DAA569"
+      },
+      {
+        "index": 22,
+        "rgb": [
+          146,
+          49,
+          30
+        ],
+        "hex": "#92311E"
+      },
+      {
+        "index": 23,
+        "rgb": [
+          49,
+          42,
+          46
+        ],
+        "hex": "#312A2E"
+      },
+      {
+        "index": 24,
+        "rgb": [
+          237,
+          10,
+          6
+        ],
+        "hex": "#ED0A06"
+      },
+      {
+        "index": 25,
+        "rgb": [
+          250,
+          169,
+          97
+        ],
+        "hex": "#FAA961"
+      },
+      {
+        "index": 26,
+        "rgb": [
+          89,
+          34,
+          14
+        ],
+        "hex": "#59220E"
+      },
+      {
+        "index": 27,
+        "rgb": [
+          213,
+          102,
+          73
+        ],
+        "hex": "#D56649"
+      },
+      {
+        "index": 28,
+        "rgb": [
+          253,
+          198,
+          130
+        ],
+        "hex": "#FDC682"
+      },
+      {
+        "index": 29,
+        "rgb": [
+          169,
+          102,
+          58
+        ],
+        "hex": "#A9663A"
+      },
+      {
+        "index": 30,
+        "rgb": [
+          206,
+          142,
+          83
+        ],
+        "hex": "#CE8E53"
+      },
+      {
+        "index": 31,
+        "rgb": [
+          57,
+          6,
+          0
+        ],
+        "hex": "#390600"
+      },
+      {
+        "index": 32,
+        "rgb": [
+          238,
+          133,
+          82
+        ],
+        "hex": "#EE8552"
+      },
+      {
+        "index": 33,
+        "rgb": [
+          234,
+          74,
+          50
+        ],
+        "hex": "#EA4A32"
+      },
+      {
+        "index": 34,
+        "rgb": [
+          190,
+          77,
+          50
+        ],
+        "hex": "#BE4D32"
+      },
+      {
+        "index": 35,
+        "rgb": [
+          93,
+          18,
+          1
+        ],
+        "hex": "#5D1201"
+      },
+      {
+        "index": 36,
+        "rgb": [
+          145,
+          114,
+          79
+        ],
+        "hex": "#91724F"
+      },
+      {
+        "index": 37,
+        "rgb": [
+          190,
+          121,
+          66
+        ],
+        "hex": "#BE7942"
+      },
+      {
+        "index": 38,
+        "rgb": [
+          133,
+          74,
+          63
+        ],
+        "hex": "#854A3F"
+      },
+      {
+        "index": 39,
+        "rgb": [
+          10,
+          6,
+          9
+        ],
+        "hex": "#0A0609"
+      },
+      {
+        "index": 40,
+        "rgb": [
+          50,
+          26,
+          29
+        ],
+        "hex": "#321A1D"
+      },
+      {
+        "index": 41,
+        "rgb": [
+          37,
+          17,
+          18
+        ],
+        "hex": "#251112"
+      },
+      {
+        "index": 42,
+        "rgb": [
+          121,
+          61,
+          28
+        ],
+        "hex": "#793D1C"
+      },
+      {
+        "index": 43,
+        "rgb": [
+          77,
+          42,
+          41
+        ],
+        "hex": "#4D2A29"
+      },
+      {
+        "index": 44,
+        "rgb": [
+          146,
+          3,
+          5
+        ],
+        "hex": "#920305"
+      },
+      {
+        "index": 45,
+        "rgb": [
+          26,
+          22,
+          25
+        ],
+        "hex": "#1A1619"
+      },
+      {
+        "index": 46,
+        "rgb": [
+          73,
+          65,
+          70
+        ],
+        "hex": "#494146"
+      },
+      {
+        "index": 47,
+        "rgb": [
+          165,
+          57,
+          30
+        ],
+        "hex": "#A5391E"
+      },
+      {
+        "index": 48,
+        "rgb": [
+          98,
+          73,
+          42
+        ],
+        "hex": "#62492A"
+      },
+      {
+        "index": 49,
+        "rgb": [
+          99,
+          230,
+          220
+        ],
+        "hex": "#63E6DC"
+      },
+      {
+        "index": 50,
+        "rgb": [
+          200,
+          255,
+          255
+        ],
+        "hex": "#C8FFFF"
+      },
+      {
+        "index": 51,
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "hex": "#FFFFFF"
+      },
+      {
+        "index": 52,
+        "rgb": [
+          160,
+          167,
+          142
+        ],
+        "hex": "#A0A78E"
+      },
+      {
+        "index": 53,
+        "rgb": [
+          216,
+          211,
+          181
+        ],
+        "hex": "#D8D3B5"
+      },
+      {
+        "index": 54,
+        "rgb": [
+          115,
+          120,
+          103
+        ],
+        "hex": "#737867"
+      },
+      {
+        "index": 55,
+        "rgb": [
+          77,
+          81,
+          68
+        ],
+        "hex": "#4D5144"
+      },
+      {
+        "index": 56,
+        "rgb": [
+          16,
+          9,
+          9
+        ],
+        "hex": "#100909"
+      },
+      {
+        "index": 57,
+        "rgb": [
+          43,
+          30,
+          31
+        ],
+        "hex": "#2B1E1F"
+      },
+      {
+        "index": 58,
+        "rgb": [
+          58,
+          48,
+          52
+        ],
+        "hex": "#3A3034"
+      },
+      {
+        "index": 59,
+        "rgb": [
+          55,
+          45,
+          49
+        ],
+        "hex": "#372D31"
+      },
+      {
+        "index": 60,
+        "rgb": [
+          57,
+          46,
+          50
+        ],
+        "hex": "#392E32"
+      },
+      {
+        "index": 61,
+        "rgb": [
+          31,
+          20,
+          20
+        ],
+        "hex": "#1F1414"
+      },
+      {
+        "index": 62,
+        "rgb": [
+          45,
+          34,
+          37
+        ],
+        "hex": "#2D2225"
+      },
+      {
+        "index": 63,
+        "rgb": [
+          35,
+          24,
+          25
+        ],
+        "hex": "#231819"
+      },
+      {
+        "index": 64,
+        "rgb": [
+          50,
+          39,
+          42
+        ],
+        "hex": "#32272A"
+      },
+      {
+        "index": 65,
+        "rgb": [
+          53,
+          40,
+          42
+        ],
+        "hex": "#35282A"
+      },
+      {
+        "index": 66,
+        "rgb": [
+          38,
+          29,
+          31
+        ],
+        "hex": "#261D1F"
+      },
+      {
+        "index": 67,
+        "rgb": [
+          76,
+          34,
+          19
+        ],
+        "hex": "#4C2213"
+      },
+      {
+        "index": 68,
+        "rgb": [
+          28,
+          16,
+          16
+        ],
+        "hex": "#1C1010"
+      },
+      {
+        "index": 69,
+        "rgb": [
+          47,
+          37,
+          41
+        ],
+        "hex": "#2F2529"
+      },
+      {
+        "index": 70,
+        "rgb": [
+          91,
+          49,
+          34
+        ],
+        "hex": "#5B3122"
+      },
+      {
+        "index": 71,
+        "rgb": [
+          173,
+          89,
+          40
+        ],
+        "hex": "#AD5928"
+      },
+      {
+        "index": 72,
+        "rgb": [
+          129,
+          60,
+          28
+        ],
+        "hex": "#813C1C"
+      },
+      {
+        "index": 73,
+        "rgb": [
+          61,
+          51,
+          55
+        ],
+        "hex": "#3D3337"
+      },
+      {
+        "index": 74,
+        "rgb": [
+          144,
+          72,
+          34
+        ],
+        "hex": "#904822"
+      },
+      {
+        "index": 75,
+        "rgb": [
+          59,
+          49,
+          53
+        ],
+        "hex": "#3B3135"
+      },
+      {
+        "index": 76,
+        "rgb": [
+          93,
+          57,
+          44
+        ],
+        "hex": "#5D392C"
+      },
+      {
+        "index": 77,
+        "rgb": [
+          188,
+          107,
+          54
+        ],
+        "hex": "#BC6B36"
+      },
+      {
+        "index": 78,
+        "rgb": [
+          176,
+          93,
+          42
+        ],
+        "hex": "#B05D2A"
+      },
+      {
+        "index": 79,
+        "rgb": [
+          163,
+          86,
+          40
+        ],
+        "hex": "#A35628"
+      },
+      {
+        "index": 80,
+        "rgb": [
+          247,
+          247,
+          206
+        ],
+        "hex": "#F7F7CE"
+      },
+      {
+        "index": 81,
+        "rgb": [
+          222,
+          222,
+          189
+        ],
+        "hex": "#DEDEBD"
+      },
+      {
+        "index": 82,
+        "rgb": [
+          255,
+          255,
+          230
+        ],
+        "hex": "#FFFFE6"
+      },
+      {
+        "index": 83,
+        "rgb": [
+          181,
+          189,
+          156
+        ],
+        "hex": "#B5BD9C"
+      },
+      {
+        "index": 84,
+        "rgb": [
+          140,
+          90,
+          99
+        ],
+        "hex": "#8C5A63"
+      },
+      {
+        "index": 85,
+        "rgb": [
+          173,
+          123,
+          123
+        ],
+        "hex": "#AD7B7B"
+      },
+      {
+        "index": 86,
+        "rgb": [
+          206,
+          156,
+          156
+        ],
+        "hex": "#CE9C9C"
+      },
+      {
+        "index": 87,
+        "rgb": [
+          107,
+          57,
+          74
+        ],
+        "hex": "#6B394A"
+      },
+      {
+        "index": 88,
+        "rgb": [
+          66,
+          33,
+          49
+        ],
+        "hex": "#422131"
+      },
+      {
+        "index": 89,
+        "rgb": [
+          246,
+          246,
+          180
+        ],
+        "hex": "#F6F6B4"
+      },
+      {
+        "index": 90,
+        "rgb": [
+          246,
+          197,
+          148
+        ],
+        "hex": "#F6C594"
+      },
+      {
+        "index": 91,
+        "rgb": [
+          238,
+          156,
+          106
+        ],
+        "hex": "#EE9C6A"
+      },
+      {
+        "index": 92,
+        "rgb": [
+          0,
+          197,
+          164
+        ],
+        "hex": "#00C5A4"
+      },
+      {
+        "index": 93,
+        "rgb": [
+          0,
+          172,
+          139
+        ],
+        "hex": "#00AC8B"
+      },
+      {
+        "index": 94,
+        "rgb": [
+          0,
+          148,
+          131
+        ],
+        "hex": "#009483"
+      },
+      {
+        "index": 95,
+        "rgb": [
+          0,
+          123,
+          90
+        ],
+        "hex": "#007B5A"
+      },
+      {
+        "index": 96,
+        "rgb": [
+          0,
+          98,
+          90
+        ],
+        "hex": "#00625A"
+      },
+      {
+        "index": 97,
+        "rgb": [
+          0,
+          74,
+          82
+        ],
+        "hex": "#004A52"
+      },
+      {
+        "index": 98,
+        "rgb": [
+          246,
+          213,
+          164
+        ],
+        "hex": "#F6D5A4"
+      },
+      {
+        "index": 99,
+        "rgb": [
+          82,
+          49,
+          49
+        ],
+        "hex": "#523131"
+      },
+      {
+        "index": 100,
+        "rgb": [
+          65,
+          32,
+          32
+        ],
+        "hex": "#412020"
+      },
+      {
+        "index": 101,
+        "rgb": [
+          49,
+          16,
+          16
+        ],
+        "hex": "#311010"
+      },
+      {
+        "index": 102,
+        "rgb": [
+          115,
+          82,
+          65
+        ],
+        "hex": "#735241"
+      },
+      {
+        "index": 103,
+        "rgb": [
+          246,
+          230,
+          164
+        ],
+        "hex": "#F6E6A4"
+      },
+      {
+        "index": 104,
+        "rgb": [
+          148,
+          148,
+          164
+        ],
+        "hex": "#9494A4"
+      },
+      {
+        "index": 105,
+        "rgb": [
+          213,
+          123,
+          74
+        ],
+        "hex": "#D57B4A"
+      }
+    ],
+    "extensions": [
+      {
+        "index": 80,
+        "rgb": [
+          247,
+          247,
+          206
+        ],
+        "hex": "#F7F7CE",
+        "first_sprite": [
+          186,
+          1
+        ],
+        "reason": "white object in hand"
+      },
+      {
+        "index": 81,
+        "rgb": [
+          222,
+          222,
+          189
+        ],
+        "hex": "#DEDEBD",
+        "first_sprite": [
+          186,
+          1
+        ],
+        "reason": "white object in hand"
+      },
+      {
+        "index": 82,
+        "rgb": [
+          255,
+          255,
+          230
+        ],
+        "hex": "#FFFFE6",
+        "first_sprite": [
+          186,
+          1
+        ],
+        "reason": "white object in hand"
+      },
+      {
+        "index": 83,
+        "rgb": [
+          181,
+          189,
+          156
+        ],
+        "hex": "#B5BD9C",
+        "first_sprite": [
+          186,
+          1
+        ],
+        "reason": "white object in hand"
+      },
+      {
+        "index": 84,
+        "rgb": [
+          140,
+          90,
+          99
+        ],
+        "hex": "#8C5A63",
+        "first_sprite": [
+          191,
+          0
+        ],
+        "reason": "training bag"
+      },
+      {
+        "index": 85,
+        "rgb": [
+          173,
+          123,
+          123
+        ],
+        "hex": "#AD7B7B",
+        "first_sprite": [
+          191,
+          0
+        ],
+        "reason": "training bag"
+      },
+      {
+        "index": 86,
+        "rgb": [
+          206,
+          156,
+          156
+        ],
+        "hex": "#CE9C9C",
+        "first_sprite": [
+          191,
+          0
+        ],
+        "reason": "training bag"
+      },
+      {
+        "index": 87,
+        "rgb": [
+          107,
+          57,
+          74
+        ],
+        "hex": "#6B394A",
+        "first_sprite": [
+          191,
+          0
+        ],
+        "reason": "training bag"
+      },
+      {
+        "index": 88,
+        "rgb": [
+          66,
+          33,
+          49
+        ],
+        "hex": "#422131",
+        "first_sprite": [
+          191,
+          5
+        ],
+        "reason": "training bag"
+      },
+      {
+        "index": 89,
+        "rgb": [
+          246,
+          246,
+          180
+        ],
+        "hex": "#F6F6B4",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 90,
+        "rgb": [
+          246,
+          197,
+          148
+        ],
+        "hex": "#F6C594",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 91,
+        "rgb": [
+          238,
+          156,
+          106
+        ],
+        "hex": "#EE9C6A",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 92,
+        "rgb": [
+          0,
+          197,
+          164
+        ],
+        "hex": "#00C5A4",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 93,
+        "rgb": [
+          0,
+          172,
+          139
+        ],
+        "hex": "#00AC8B",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 94,
+        "rgb": [
+          0,
+          148,
+          131
+        ],
+        "hex": "#009483",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 95,
+        "rgb": [
+          0,
+          123,
+          90
+        ],
+        "hex": "#007B5A",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 96,
+        "rgb": [
+          0,
+          98,
+          90
+        ],
+        "hex": "#00625A",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 97,
+        "rgb": [
+          0,
+          74,
+          82
+        ],
+        "hex": "#004A52",
+        "first_sprite": [
+          2100,
+          0
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 98,
+        "rgb": [
+          246,
+          213,
+          164
+        ],
+        "hex": "#F6D5A4",
+        "first_sprite": [
+          2100,
+          1
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 99,
+        "rgb": [
+          82,
+          49,
+          49
+        ],
+        "hex": "#523131",
+        "first_sprite": [
+          2100,
+          1
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 100,
+        "rgb": [
+          65,
+          32,
+          32
+        ],
+        "hex": "#412020",
+        "first_sprite": [
+          2100,
+          1
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 101,
+        "rgb": [
+          49,
+          16,
+          16
+        ],
+        "hex": "#311010",
+        "first_sprite": [
+          2100,
+          1
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 102,
+        "rgb": [
+          115,
+          82,
+          65
+        ],
+        "hex": "#735241",
+        "first_sprite": [
+          2100,
+          2
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 103,
+        "rgb": [
+          246,
+          230,
+          164
+        ],
+        "hex": "#F6E6A4",
+        "first_sprite": [
+          2100,
+          3
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 104,
+        "rgb": [
+          148,
+          148,
+          164
+        ],
+        "hex": "#9494A4",
+        "first_sprite": [
+          2100,
+          5
+        ],
+        "reason": "original backpack"
+      },
+      {
+        "index": 105,
+        "rgb": [
+          213,
+          123,
+          74
+        ],
+        "hex": "#D57B4A",
+        "first_sprite": [
+          2100,
+          9
+        ],
+        "reason": "original backpack"
+      }
+    ]
+  },
+  "base48_reference": "../../../../pixel-art/siberra_palette48/Siberra_palette_indexed.txt",
+  "sprite_palette_notes": {
+    "0,0": "SFF combat bank105 positions; first48 exact original base",
+    "9000,0": "Mini photograph with own palette synchronized with ACT",
+    "9000,1": "Large photograph with own palette; excluded from forced selector palette"
+  },
+  "selector": "portraitpalette=1, portraitpalettephoto=0",
+  "backup": "/Users/timofey/Documents/custom_fighting_game/artifacts/Siberra/restore_before_simplification_2026_10_21/before_restore",
+  "trial_recolor": {
+    "slots": [
+      12
+    ],
+    "source_matching": "pixel-art/siberra_palette_1_1_full_remap_2026_10_21/matching.txt",
+    "matching_sha256": "6e08bcdb8112732dc6e15184f372975d2978a85ac89aeca680bf5d542bc2b157",
+    "index_order_preserved": true,
+    "entries": [
+      {
+        "index": 0,
+        "source": "#FF00FF",
+        "target": "#FF00FF",
+        "alpha": 0,
+        "rule": "transparent; preserve index0 RGB; PNG RGBA0"
+      },
+      {
+        "index": 1,
+        "source": "#010101",
+        "target": "#353547",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 2,
+        "source": "#FDBD71",
+        "target": "#FDBD71",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 3,
+        "source": "#A53F31",
+        "target": "#4976D2",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 4,
+        "source": "#3F373C",
+        "target": "#F0F1F0",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 5,
+        "source": "#E2754E",
+        "target": "#E2754E",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 6,
+        "source": "#490D01",
+        "target": "#490D01",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 7,
+        "source": "#C10101",
+        "target": "#C10101",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 8,
+        "source": "#221D21",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 9,
+        "source": "#FA9552",
+        "target": "#FA9552",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 10,
+        "source": "#762512",
+        "target": "#762512",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 11,
+        "source": "#764239",
+        "target": "#1A2B72",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 12,
+        "source": "#FDD195",
+        "target": "#FDD195",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 13,
+        "source": "#AE895B",
+        "target": "#AE895B",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 14,
+        "source": "#925546",
+        "target": "#925546",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 15,
+        "source": "#412122",
+        "target": "#131A52",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 16,
+        "source": "#C65A41",
+        "target": "#C65A41",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 17,
+        "source": "#51484E",
+        "target": "#F7F7F6",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 18,
+        "source": "#260100",
+        "target": "#260100",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 19,
+        "source": "#59312E",
+        "target": "#1A2B72",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 20,
+        "source": "#120E11",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 21,
+        "source": "#DAA569",
+        "target": "#DAA569",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 22,
+        "source": "#92311E",
+        "target": "#92311E",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 23,
+        "source": "#312A2E",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 24,
+        "source": "#ED0A06",
+        "target": "#ED0A06",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 25,
+        "source": "#FAA961",
+        "target": "#FAA961",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 26,
+        "source": "#59220E",
+        "target": "#59220E",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 27,
+        "source": "#D56649",
+        "target": "#D56649",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 28,
+        "source": "#FDC682",
+        "target": "#FDC682",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 29,
+        "source": "#A9663A",
+        "target": "#A9663A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 30,
+        "source": "#CE8E53",
+        "target": "#CE8E53",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 31,
+        "source": "#390600",
+        "target": "#390600",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 32,
+        "source": "#EE8552",
+        "target": "#EE8552",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 33,
+        "source": "#EA4A32",
+        "target": "#EA4A32",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 34,
+        "source": "#BE4D32",
+        "target": "#4976D2",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 35,
+        "source": "#5D1201",
+        "target": "#5D1201",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 36,
+        "source": "#91724F",
+        "target": "#91724F",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 37,
+        "source": "#BE7942",
+        "target": "#BE7942",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 38,
+        "source": "#854A3F",
+        "target": "#1A3583",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 39,
+        "source": "#0A0609",
+        "target": "#696975",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 40,
+        "source": "#321A1D",
+        "target": "#131A52",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 41,
+        "source": "#251112",
+        "target": "#131A52",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 42,
+        "source": "#793D1C",
+        "target": "#1A2B72",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 43,
+        "source": "#4D2A29",
+        "target": "#182462",
+        "alpha": 255,
+        "rule": "exact hair mapping; global priority over skin-shadow identity"
+      },
+      {
+        "index": 44,
+        "source": "#920305",
+        "target": "#920305",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 45,
+        "source": "#1A1619",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 46,
+        "source": "#494146",
+        "target": "#F2F1F2",
+        "alpha": 255,
+        "rule": "exact white clothing/wrap mapping; global priority over hair/eyes"
+      },
+      {
+        "index": 47,
+        "source": "#A5391E",
+        "target": "#A5391E",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 48,
+        "source": "#62492A",
+        "target": "#62492A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 49,
+        "source": "#63E6DC",
+        "target": "#63E6DC",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 50,
+        "source": "#C8FFFF",
+        "target": "#C8FFFF",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 51,
+        "source": "#FFFFFF",
+        "target": "#FFFFFF",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 52,
+        "source": "#A0A78E",
+        "target": "#A0A78E",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 53,
+        "source": "#D8D3B5",
+        "target": "#D8D3B5",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 54,
+        "source": "#737867",
+        "target": "#737867",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 55,
+        "source": "#4D5144",
+        "target": "#4D5144",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 56,
+        "source": "#100909",
+        "target": "#100909",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 57,
+        "source": "#2B1E1F",
+        "target": "#2B1E1F",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 58,
+        "source": "#3A3034",
+        "target": "#3A3034",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 59,
+        "source": "#372D31",
+        "target": "#372D31",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 60,
+        "source": "#392E32",
+        "target": "#392E32",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 61,
+        "source": "#1F1414",
+        "target": "#1F1414",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 62,
+        "source": "#2D2225",
+        "target": "#2D2225",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 63,
+        "source": "#231819",
+        "target": "#231819",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 64,
+        "source": "#32272A",
+        "target": "#32272A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 65,
+        "source": "#35282A",
+        "target": "#35282A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 66,
+        "source": "#261D1F",
+        "target": "#261D1F",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 67,
+        "source": "#4C2213",
+        "target": "#4C2213",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 68,
+        "source": "#1C1010",
+        "target": "#1C1010",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 69,
+        "source": "#2F2529",
+        "target": "#2F2529",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 70,
+        "source": "#5B3122",
+        "target": "#5B3122",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 71,
+        "source": "#AD5928",
+        "target": "#AD5928",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 72,
+        "source": "#813C1C",
+        "target": "#813C1C",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 73,
+        "source": "#3D3337",
+        "target": "#3D3337",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 74,
+        "source": "#904822",
+        "target": "#904822",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 75,
+        "source": "#3B3135",
+        "target": "#3B3135",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 76,
+        "source": "#5D392C",
+        "target": "#5D392C",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 77,
+        "source": "#BC6B36",
+        "target": "#BC6B36",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 78,
+        "source": "#B05D2A",
+        "target": "#B05D2A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 79,
+        "source": "#A35628",
+        "target": "#A35628",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 80,
+        "source": "#F7F7CE",
+        "target": "#F7F7CE",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 81,
+        "source": "#DEDEBD",
+        "target": "#DEDEBD",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 82,
+        "source": "#FFFFE6",
+        "target": "#FFFFE6",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 83,
+        "source": "#B5BD9C",
+        "target": "#B5BD9C",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 84,
+        "source": "#8C5A63",
+        "target": "#8C5A63",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 85,
+        "source": "#AD7B7B",
+        "target": "#AD7B7B",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 86,
+        "source": "#CE9C9C",
+        "target": "#CE9C9C",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 87,
+        "source": "#6B394A",
+        "target": "#6B394A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 88,
+        "source": "#422131",
+        "target": "#422131",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 89,
+        "source": "#F6F6B4",
+        "target": "#F6F6B4",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 90,
+        "source": "#F6C594",
+        "target": "#F6C594",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 91,
+        "source": "#EE9C6A",
+        "target": "#EE9C6A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 92,
+        "source": "#00C5A4",
+        "target": "#00C5A4",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 93,
+        "source": "#00AC8B",
+        "target": "#00AC8B",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 94,
+        "source": "#009483",
+        "target": "#009483",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 95,
+        "source": "#007B5A",
+        "target": "#007B5A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 96,
+        "source": "#00625A",
+        "target": "#00625A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 97,
+        "source": "#004A52",
+        "target": "#004A52",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 98,
+        "source": "#F6D5A4",
+        "target": "#F6D5A4",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 99,
+        "source": "#523131",
+        "target": "#523131",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 100,
+        "source": "#412020",
+        "target": "#412020",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 101,
+        "source": "#311010",
+        "target": "#311010",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 102,
+        "source": "#735241",
+        "target": "#735241",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 103,
+        "source": "#F6E6A4",
+        "target": "#F6E6A4",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 104,
+        "source": "#9494A4",
+        "target": "#9494A4",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 105,
+        "source": "#D57B4A",
+        "target": "#D57B4A",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 106,
+        "source": "#262323",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 107,
+        "source": "#272224",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 108,
+        "source": "#262224",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 109,
+        "source": "#262223",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 110,
+        "source": "#272124",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 111,
+        "source": "#262324",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 112,
+        "source": "#272323",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 113,
+        "source": "#252222",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 114,
+        "source": "#252221",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 115,
+        "source": "#252123",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 116,
+        "source": "#252122",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 117,
+        "source": "#252121",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 118,
+        "source": "#272526",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 119,
+        "source": "#282324",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 120,
+        "source": "#282424",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 121,
+        "source": "#242120",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 122,
+        "source": "#232122",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 123,
+        "source": "#371C11",
+        "target": "#371C11",
+        "alpha": 255,
+        "rule": "identity; skin/red accents/FX/prop colors preserved"
+      },
+      {
+        "index": 124,
+        "source": "#2C1E19",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 125,
+        "source": "#282425",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 126,
+        "source": "#281D1A",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 127,
+        "source": "#281915",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 128,
+        "source": "#252020",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 129,
+        "source": "#242022",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 130,
+        "source": "#242021",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 131,
+        "source": "#282525",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 132,
+        "source": "#241F20",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 133,
+        "source": "#282526",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 134,
+        "source": "#251814",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 135,
+        "source": "#292425",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 136,
+        "source": "#232020",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 137,
+        "source": "#231F21",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 138,
+        "source": "#292525",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 139,
+        "source": "#231F1F",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 140,
+        "source": "#231A18",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 141,
+        "source": "#222021",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 142,
+        "source": "#221F20",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 143,
+        "source": "#221F1F",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 144,
+        "source": "#292526",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 145,
+        "source": "#221E1F",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 146,
+        "source": "#2A2626",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 147,
+        "source": "#2A2627",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 148,
+        "source": "#2A2727",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 149,
+        "source": "#2B2829",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 150,
+        "source": "#2C2727",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 151,
+        "source": "#201E1E",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 152,
+        "source": "#211D1E",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 153,
+        "source": "#201D1E",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 154,
+        "source": "#2C2829",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 155,
+        "source": "#2D292A",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 156,
+        "source": "#201D1C",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 157,
+        "source": "#201C1D",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 158,
+        "source": "#2E221E",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 159,
+        "source": "#2F2421",
+        "target": "#EBEAEB",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #312A2E"
+      },
+      {
+        "index": 160,
+        "source": "#1F1C1D",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 161,
+        "source": "#1F1C1C",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 162,
+        "source": "#1F1C1B",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 163,
+        "source": "#1E1C1C",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 164,
+        "source": "#1F1B1C",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 165,
+        "source": "#1E1B1C",
+        "target": "#DFDEE0",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #221D21"
+      },
+      {
+        "index": 166,
+        "source": "#1E1B1B",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 167,
+        "source": "#1F1B1A",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 168,
+        "source": "#1D1B1B",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 169,
+        "source": "#1E1A1A",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 170,
+        "source": "#1D1A1B",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 171,
+        "source": "#1D1A1A",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 172,
+        "source": "#1D1A19",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 173,
+        "source": "#1D191A",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 174,
+        "source": "#1C1A1A",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 175,
+        "source": "#1C191A",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 176,
+        "source": "#1C1919",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 177,
+        "source": "#1B1919",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 178,
+        "source": "#1E1717",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 179,
+        "source": "#1B1819",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 180,
+        "source": "#1B1818",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 181,
+        "source": "#1B1816",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 182,
+        "source": "#1B1718",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 183,
+        "source": "#1A1818",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 184,
+        "source": "#1A1718",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 185,
+        "source": "#1A1717",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 186,
+        "source": "#1A1716",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 187,
+        "source": "#1E1614",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 188,
+        "source": "#1B1514",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 189,
+        "source": "#1B120F",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 190,
+        "source": "#191717",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 191,
+        "source": "#191617",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 192,
+        "source": "#191616",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 193,
+        "source": "#191615",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 194,
+        "source": "#181617",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 195,
+        "source": "#181616",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 196,
+        "source": "#171617",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 197,
+        "source": "#181615",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 198,
+        "source": "#191516",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 199,
+        "source": "#181516",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 200,
+        "source": "#181515",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 201,
+        "source": "#171516",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 202,
+        "source": "#171515",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 203,
+        "source": "#161515",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 204,
+        "source": "#171514",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 205,
+        "source": "#181414",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 206,
+        "source": "#171416",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 207,
+        "source": "#171415",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 208,
+        "source": "#171414",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 209,
+        "source": "#161415",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 210,
+        "source": "#161414",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 211,
+        "source": "#151415",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 212,
+        "source": "#151412",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 213,
+        "source": "#181212",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 214,
+        "source": "#161314",
+        "target": "#CECDCF",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #1A1619"
+      },
+      {
+        "index": 215,
+        "source": "#161313",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 216,
+        "source": "#161212",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 217,
+        "source": "#151314",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 218,
+        "source": "#151313",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 219,
+        "source": "#151213",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 220,
+        "source": "#151212",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 221,
+        "source": "#141313",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 222,
+        "source": "#141213",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 223,
+        "source": "#141212",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 224,
+        "source": "#141211",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 225,
+        "source": "#131212",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 226,
+        "source": "#16100F",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 227,
+        "source": "#141112",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 228,
+        "source": "#141111",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 229,
+        "source": "#14100F",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 230,
+        "source": "#131112",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 231,
+        "source": "#131111",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 232,
+        "source": "#131010",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 233,
+        "source": "#121111",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 234,
+        "source": "#121011",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 235,
+        "source": "#121010",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 236,
+        "source": "#120F10",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 237,
+        "source": "#111010",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 238,
+        "source": "#110F10",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 239,
+        "source": "#110F0F",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 240,
+        "source": "#100F0F",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 241,
+        "source": "#100F0E",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 242,
+        "source": "#120E0E",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 243,
+        "source": "#100E0F",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 244,
+        "source": "#100E0E",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 245,
+        "source": "#100E0D",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 246,
+        "source": "#100D0D",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 247,
+        "source": "#0F0E0E",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 248,
+        "source": "#0F0D0D",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 249,
+        "source": "#0E0D0D",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 250,
+        "source": "#100C0C",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 251,
+        "source": "#0E0C0C",
+        "target": "#BEBCBC",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #120E11"
+      },
+      {
+        "index": 252,
+        "source": "#0D0B0B",
+        "target": "#696975",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #0A0609"
+      },
+      {
+        "index": 253,
+        "source": "#0D0A0A",
+        "target": "#696975",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #0A0609"
+      },
+      {
+        "index": 254,
+        "source": "#0B090A",
+        "target": "#696975",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #0A0609"
+      },
+      {
+        "index": 255,
+        "source": "#0A0707",
+        "target": "#696975",
+        "alpha": 255,
+        "rule": "additional near-black shade -> nearest SOURCE neutral #0A0609"
+      }
+    ],
+    "known_shared_index_artifacts": true,
+    "backup": "artifacts/Siberra/install_trial_full_remap_2026_10_21/backup",
+    "embedded_sff_palettes_unchanged": true,
+    "runtime_file": "act/siberra_white_trial.act",
+    "ACT_sha256": "d2457ce45b0b6da9eb89a53fe9dd8ebba545c54d09ff9031493a1229ab4f5813",
+    "slot_fix_backup": "artifacts/Siberra/fix_trial_palette_slot12_2026_10_21/backup"
+  },
+  "selectable_palettes": [
+    {
+      "slots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "name": "Original Siberra",
+      "file": "act/siberra.act",
+      "sha256": "4e2fbce69ddfaeb9731ccc1d3b00a7225bfcf246ab94f4d611400ce021e1180e"
+    },
+    {
+      "slots": [
+        12
+      ],
+      "name": "White trial global remap",
+      "file": "act/siberra_white_trial.act",
+      "sha256": "d2457ce45b0b6da9eb89a53fe9dd8ebba545c54d09ff9031493a1229ab4f5813"
+    }
+  ]
+}

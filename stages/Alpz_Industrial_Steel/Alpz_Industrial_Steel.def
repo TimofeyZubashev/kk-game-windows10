@@ -1,0 +1,329 @@
+;***************************************************************************
+;***************************************************************************
+;=========================STAGE INFO===========================================
+; Shutdown Industrial Steel Factory, originally from Rage Of The Dragons.
+; 
+; inspired by Infinite's Oni [he's an awesome-ass character btw, you
+; need to go cop'im for yourself, sucka!], i decided on a whim to 
+; kreate this stage in honor of him.
+;
+;==============================================================================
+;****************************************************************************
+;*************************|Props & Chizz|************************************
+;~~ my fellow Reign Of Kreation brethren Vegaz [SJ'd tha stage], 
+;   Excahm [gank'd some sprites from'im xD], & Genesis for givin' me
+;   AA (Aid & Assistance), feedback & such.
+;~~ Sensei Yoda & JAM for sprites used towards kreatin' this joint.
+;~~ Infinite for tha inspiration due to his Oni [good chizz my dude!]
+;~~ NewAge Mugen
+;~~ C.R.O.M
+;~~ MFFA
+;~~ tha vast number of peeps that i've work'd with & that i'm kool with
+;   all thru tha Mugen community that i'm too damn'd lazy to name here
+;   [if you know who you are, raise your hands! xD]
+;
+;~~ Y-O-U for coppin' this stage.
+;
+;
+;
+;
+;   'til tha next kreation comes along folks, enjoy dem shitz. 1.
+;****************************************************************************
+;****************************************************************************
+
+
+
+
+;=============================================================================
+[Info]
+name 		= "Shutdown Industrial Steel Factory"
+displayname 	= "Industrial Steel Factory" 
+mugenversion 	= 1.0
+author 		= "Alpyne D"
+
+
+[Music]
+bgmusic = stages/Alpz_Industrial_Steel/fokus_from_24s.mp3
+;bgmusic 	= stages/Alpz_Industrial_Steel/Alpz_Industrial_Steel_2.mp3
+
+bgmvolume = 75
+
+
+[Camera]
+startx 		= 0
+starty 		= 0
+boundleft 	= -144
+boundright 	= 144
+boundhigh 	= -110
+boundlow 	= 0
+tension 	= 50
+verticalfollow 	= .95
+floortension 	= 98
+overdrawhigh 	= 120
+overdrawlow 	= 120
+cuthigh 	= 0
+cutlow 		= 0
+
+[PlayerInfo]
+p1startx 	= -70
+p1starty 	= 0
+p1facing 	= 1
+p2startx 	= 70
+p2starty 	= 0
+p2facing 	= -1
+p3startx 	= -100
+p3starty 	= 0
+p3facing 	= 1
+p4startx 	= 100
+p4starty 	= 0
+p4facing 	= -1
+leftbound 	= -1000
+rightbound 	= 1000
+
+[Bound]
+screenleft 	= 15
+screenright 	= 15
+
+[StageInfo]
+zoffset 	= 220.0
+autoturn 	= 1
+resetBG 	= 0
+localcoord 	= 320, 240
+xscale 		= 1
+yscale 		= 1
+portraitscale = 1
+
+[Scaling]
+topz     	= 0
+botz     	= 50
+topscale 	= 1
+botscale 	= 1.2
+
+[Shadow]
+color 		= 0,0,0
+yscale 		= .1
+
+[BGdef]
+spr 		= Alpz_Industrial_Steel.sff
+debugbg 	= 0
+
+
+;======================================================================
+
+[BG Factory Background]
+type = normal
+start = 0,0
+spriteno = 1,2
+delta = 0.2,1
+mask = 1
+
+
+[BG Main]
+type  		= normal
+spriteno 	= 1, 1
+start 		= 0,-16
+delta 		= 1,1
+mask     	= 1
+
+
+[BG STEAM]
+type  	   	= anim
+actionno 	= 1
+start 		= 198,48
+delta 	        = 1,1
+mask            = 1
+layerno         = 0
+
+
+[BG Can]
+type  		= normal
+spriteno 	= 2, 1
+start 		= 95,115
+delta 		= 1.03,1
+mask            = 1
+layerno         = 0
+
+
+[BG FG Side Can]
+type  		= normal
+spriteno 	= 2, 3
+start 		= -278,145
+delta 		= 1,1
+mask            = 1
+layerno         = 0
+
+
+[BG FG Side Can Trans]
+type  		= normal
+spriteno 	= 2, 3
+start 		= -278,145
+delta 		= 1,1
+mask            = 1
+trans     	= add1
+layerno         = 1
+
+
+; DISABLED: [BG RAIN]
+; DISABLED: type            = anim
+; DISABLED: actionno        = 2
+; DISABLED: start           = 0,0
+; DISABLED: mask            = 1
+; DISABLED: delta           = 0, 0
+; DISABLED: layerno         = 1
+; DISABLED: trans           = addalpha
+; DISABLED: alpha           = 10, 50
+
+
+; DISABLED: [BG Drops 1 RIGHT]
+; DISABLED: type            = anim
+; DISABLED: actionno        = 3
+; DISABLED: start           = 250,-59
+; DISABLED: delta           = 1,1
+; DISABLED: mask            = 1
+
+
+; DISABLED: [BG Drops 2 LEFT]
+; DISABLED: type            = anim
+; DISABLED: actionno        = 4
+; DISABLED: start           = -170,-67
+; DISABLED: delta           = 1,1
+; DISABLED: mask            = 1
+
+
+; DISABLED: [BG Drops 3 MID]
+; DISABLED: type            = anim
+; DISABLED: actionno        = 5
+; DISABLED: start           = 0,-58
+; DISABLED: delta           = 1,1
+; DISABLED: mask            = 1
+
+
+[BG Overlay]
+type            = normal
+spriteno        = 0,2
+start           = 0,-16
+delta           = 0,0
+trans           = addalpha
+alpha           = 250,150
+layerno         = 1
+
+
+
+[Begin Action 1]      ;<---- Pipe Steam
+-1,-1,0,0,800
+4,1,0,0,2,,AS175D256
+4,2,0,0,2,,AS175D256
+4,3,0,0,2,,AS175D256
+4,4,0,0,2,,AS175D256
+4,5,0,0,2,,AS175D256
+4,6,0,0,2,,AS175D256
+4,7,0,0,2,,AS175D256
+4,8,0,0,2,,AS175D256
+4,9,0,0,2,,AS175D256
+4,10,0,0,2,,AS175D256
+4,11,0,0,2,,AS175D256
+4,1,0,0,2,,AS175D256
+4,2,0,0,2,,AS175D256
+4,3,0,0,2,,AS175D256
+4,4,0,0,2,,AS175D256
+4,5,0,0,2,,AS175D256
+4,6,0,0,2,,AS175D256
+4,7,0,0,2,,AS175D256
+4,8,0,0,2,,AS175D256
+4,9,0,0,2,,AS175D256
+4,10,0,0,2,,AS175D256
+4,11,0,0,2,,AS175D256
+4,1,0,0,2,,AS175D256
+4,2,0,0,2,,AS175D256
+4,3,0,0,2,,AS175D256
+4,4,0,0,2,,AS175D256
+4,5,0,0,2,,AS175D256
+4,6,0,0,2,,AS175D256
+4,7,0,0,2,,AS175D256
+4,8,0,0,2,,AS175D256
+4,9,0,0,2,,AS175D256
+4,10,0,0,2,,AS175D256
+4,11,0,0,2,,AS175D256
+4,1,0,0,2,,AS175D256
+4,2,0,0,2,,AS175D256
+4,3,0,0,2,,AS175D256
+4,4,0,0,2,,AS175D256
+4,5,0,0,2,,AS175D256
+4,6,0,0,2,,AS175D256
+4,7,0,0,2,,AS175D256
+4,8,0,0,2,,AS175D256
+4,9,0,0,2,,AS175D256
+4,10,0,0,2,,AS175D256
+4,11,0,0,2,,AS175D256
+
+4,1,0,0,2,,AS149D256  ;<---- steam fades out
+4,2,0,0,2,,AS134D256
+4,3,0,0,2,,AS119D256
+4,4,0,0,2,,AS103D256
+4,5,0,0,2,,AS88D256
+4,6,0,0,2,,AS72D256
+4,7,0,0,2,,AS57D256
+4,8,0,0,2,,AS42D256
+4,9,0,0,2,,AS27D256
+4,10,0,0,2,,AS27D256
+4,11,0,0,2,,AS27D256
+
+
+
+[Begin Action 2]      ;<---- Rain
+5,1,0,0,2,,AS125D256
+5,2,0,0,2,,AS125D256
+5,3,0,0,2,,AS125D256
+5,4,0,0,2,,AS125D256
+5,5,0,0,2,,AS125D256
+5,6,0,0,2,,AS125D256
+5,7,0,0,2,,AS125D256
+5,8,0,0,2,,AS125D256
+5,9,0,0,2,,AS125D256
+5,10,0,0,2,,AS125D256
+5,11,0,0,2,,AS125D256
+5,12,0,0,2,,AS125D256
+5,13,0,0,2,,AS125D256
+5,14,0,0,2,,AS125D256
+5,15,0,0,2,,AS125D256
+5,16,0,0,2,,AS125D256
+5,17,0,0,2,,AS125D256
+5,18,0,0,2,,AS125D256
+5,19,0,0,2,,AS125D256
+5,20,0,0,2,,AS125D256
+
+
+[Begin Action 3]       ;<---- R. Drops 1
+6,1,0,0,2,,A
+6,2,0,0,2,,A
+6,3,0,0,2,,A
+6,4,0,0,2,,A
+6,5,0,0,2,,A
+6,6,0,0,2,,A
+6,7,0,0,2,,A
+-0,1,0,0,9
+
+
+[Begin Action 4]       ;<---- R. Drops 2
+7,1,0,0,2,,A
+7,2,0,0,2,,A
+7,3,0,0,2,,A
+7,4,0,0,2,,A
+7,5,0,0,2,,A
+7,6,0,0,2,,A
+-0,1,0,0,4
+
+
+[Begin Action 5]       ;<---- R. Drops 3
+8,1,0,0,2,,A
+8,2,0,0,2,,A
+8,3,0,0,2,,A
+8,4,0,0,2,,A
+8,5,0,0,2,,A
+8,6,0,0,2,,A
+8,7,0,0,2,,A
+-0,1,0,0,2
+
+
+
+

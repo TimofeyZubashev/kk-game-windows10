@@ -1,0 +1,188 @@
+{
+  "playtime": 7754.77,
+  "modes": {
+    "arcade": {
+      "playtime": 1689.02,
+      "clear": 1,
+      "clearcount": {
+        "kfm_zaxis": 1
+      },
+      "ranking": [
+        {
+          "score": 133000,
+          "time": 383.82,
+          "win": 3,
+          "lose": 2,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "victor_nagaev"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 130900,
+          "time": 21.82,
+          "win": 1,
+          "lose": 0,
+          "consecutive": 0,
+          "name": "",
+          "chars": [
+            "kfm_zaxis"
+          ],
+          "tmode": 0,
+          "ailevel": 5
+        },
+        {
+          "score": 74400,
+          "time": 191.85,
+          "win": 2,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "",
+          "chars": [
+            "sixseven"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 63700,
+          "time": 132.42,
+          "win": 1,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "n_yoko littner"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 48700,
+          "time": 137.17,
+          "win": 0,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "",
+          "chars": [
+            "akuma"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 41500,
+          "time": 157.53,
+          "win": 1,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "sixseven"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 40500,
+          "time": 128.38,
+          "win": 1,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "sf3_ken"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 6100,
+          "time": 52.68,
+          "win": 0,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "sf3_ken"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 5000,
+          "time": 37.05,
+          "win": 0,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "",
+          "chars": [
+            "sf3_ken"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        },
+        {
+          "score": 5000,
+          "time": 37.3,
+          "win": 0,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "sf3_ken"
+          ],
+          "tmode": 0,
+          "ailevel": 4
+        }
+      ]
+    },
+    "training": {
+      "playtime": 0,
+      "clear": 0
+    },
+    "versus": {
+      "playtime": 0,
+      "clear": 0
+    },
+    "survival": {
+      "playtime": 59.18,
+      "clear": 0,
+      "ranking": [
+        {
+          "score": 17300,
+          "time": 59.18,
+          "win": 1,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "",
+          "chars": [
+            "sf3_ken"
+          ],
+          "tmode": 0,
+          "ailevel": 5
+        }
+      ]
+    },
+    "watch": {
+      "playtime": 5887.26,
+      "clear": 23,
+      "clearcount": {
+        "sf3_ken": 1,
+        "sixseven": 6,
+        "baiken_xx": 1,
+        "victor_nagaev": 6,
+        "sf3_ibuki": 6,
+        "sf3 oro (umihei)": 1,
+        "superl": 2
+      }
+    },
+    "freebattle": {
+      "playtime": 119.31,
+      "clear": 0
+    }
+  }
+}
